@@ -7,7 +7,7 @@ Current configuration:
 -dest_ts2cbfn		.semi.
 -dest_varfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
 -example	no	no
--fullvar	no	no
+-fullvar	no	yes
 -help		no	no
 -src_meanfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
 -src_mixwfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights
@@ -33,7 +33,7 @@ INFO: s3tmat_io.c(118): Read /home/yaroslav/model/model_parameters/ua.ci_semi_fl
 INFO: main.c(318): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
 INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means [1x4x256 array]
 INFO: main.c(342): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array]
+INFO: s3gau_full_io.c(176): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array of full matrices]
 INFO: main.c(391): Reading dest /home/yaroslav/model/model_architecture/ua.ci.mdef
 INFO: model_def_io.c(573): Model definition info:
 INFO: model_def_io.c(574): 49 total models defined (49 base, 0 tri)
@@ -151,7 +151,7 @@ INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_f
 INFO: main.c(549): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means [1x4x256 array]
 INFO: main.c(561): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array]
+INFO: s3gau_full_io.c(249): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array of full matrices]
 [tm    48 +=    48]
 [mx   144(0) +=   144] [mx   145(1) +=   145] [mx   146(2) +=   146] 
-Wed Apr  6 00:11:25 2016
+Wed Apr  6 22:33:26 2016

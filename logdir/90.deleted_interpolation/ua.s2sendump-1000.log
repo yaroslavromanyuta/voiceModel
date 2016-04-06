@@ -17,7 +17,7 @@ INFO: model_def_io.c(578): 49 total tied transition matrices
 INFO: model_def_io.c(579): 4 max state/model
 INFO: model_def_io.c(580): 4 min state/model
 INFO: senone.c(210): Reading senone mixture weights: /home/yaroslav/model/model_parameters/ua.cd_semi_1000_delinterp/mixture_weights
-WARN: "senone.c", line 318: Weight normalization failed for 12 senones
+WARN: "senone.c", line 318: Weight normalization failed for 24 senones
 INFO: senone.c(331): Read mixture weights for 1147 senones: 4 features x 256 codewords
 INFO: mk_s2sendump.c(207): Writing PocketSphinx format sendump file: /home/yaroslav/model/model_parameters/ua.cd_semi_1000_delinterp/sendump
-Wed Apr  6 01:32:56 2016
+Thu Apr  7 00:57:43 2016

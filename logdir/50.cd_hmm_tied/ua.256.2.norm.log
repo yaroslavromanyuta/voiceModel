@@ -4,7 +4,7 @@ Current configuration:
 -constE		3.0	3.000000e+00
 -dcountfn		
 -example	no	no
--fullvar	no	no
+-fullvar	no	yes
 -help		no	no
 -inmeanfn		
 -inmixwfn		
@@ -21,18 +21,18 @@ Current configuration:
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_2
 INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_2/mixw_counts [1147x4x256 array]
 INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_2/tmat_counts [49x3x4 array]
-INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_2/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
+INFO: s3gau_full_io.c(418): Read /home/yaroslav/model/bwaccumdir/ua_buff_2/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_1
 INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [1147x4x256 array]
 INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [49x3x4 array]
-INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
+INFO: s3gau_full_io.c(418): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
 INFO: main.c(321): -2passvar yes
 INFO: main.c(391): Normalizing mean for n_mgau= 1, n_stream= 4, n_density= 256
-INFO: main.c(414): Normalizing var
+INFO: main.c(405): Normalizing fullvar
 INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_1000/mixture_weights [1147x4x256 array]
 INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_1000/transition_matrices [49x3x4 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_1000/means [1x4x256 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_1000/variances [1x4x256 array]
-Wed Apr  6 01:28:58 2016
-Current Overall Likelihood Per Frame = -181.716337216425
-Convergence ratio = 1.9455941023879
+INFO: s3gau_full_io.c(249): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_1000/variances [1x4x256 array of full matrices]
+Thu Apr  7 00:47:27 2016
+Current Overall Likelihood Per Frame = -64.2803152965888
+Convergence ratio = 1.58956742445797

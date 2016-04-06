@@ -4,7 +4,7 @@ Current configuration:
 -constE		3.0	3.000000e+00
 -dcountfn		
 -example	no	no
--fullvar	no	no
+-fullvar	no	yes
 -help		no	no
 -inmeanfn		
 -inmixwfn		
@@ -21,37 +21,14 @@ Current configuration:
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_1
 INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [22629x4x256 array]
 INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [49x3x4 array]
-INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
+INFO: s3gau_full_io.c(418): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
 INFO: main.c(321): -2passvar yes
 INFO: main.c(391): Normalizing mean for n_mgau= 1, n_stream= 4, n_density= 256
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 1) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 12) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 23) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 42) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 52) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 55) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 88) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 92) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 93) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 105) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 112) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 114) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 126) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 132) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 142) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 152) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 168) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 172) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 178) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 192) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 217) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 238) never observed
-WARN: "gauden.c", line 1565: (mgau= 0, feat= 2, density= 251) never observed
-INFO: main.c(414): Normalizing var
+INFO: main.c(405): Normalizing fullvar
 INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/mixture_weights [22629x4x256 array]
 INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/transition_matrices [49x3x4 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/means [1x4x256 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances [1x4x256 array]
-Wed Apr  6 00:44:47 2016
-Current Overall Likelihood Per Frame = -179.073437841235
-Convergence ratio = 0.295945924351656
+INFO: s3gau_full_io.c(249): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances [1x4x256 array of full matrices]
+Thu Apr  7 00:07:40 2016
+Current Overall Likelihood Per Frame = -59.2233551408004
+Convergence ratio = 0.226243353828011

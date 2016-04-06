@@ -7,7 +7,7 @@ Current configuration:
 -dest_ts2cbfn		.semi.
 -dest_varfn		/home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances
 -example	no	no
--fullvar	no	no
+-fullvar	no	yes
 -help		no	no
 -src_meanfn		/home/yaroslav/model/model_parameters/ua.ci_semi/means
 -src_mixwfn		/home/yaroslav/model/model_parameters/ua.ci_semi/mixture_weights
@@ -33,7 +33,7 @@ INFO: s3tmat_io.c(118): Read /home/yaroslav/model/model_parameters/ua.ci_semi/tr
 INFO: main.c(318): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi/means
 INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi/means [1x4x256 array]
 INFO: main.c(342): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi/variances
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi/variances [1x4x256 array]
+INFO: s3gau_full_io.c(176): Read /home/yaroslav/model/model_parameters/ua.ci_semi/variances [1x4x256 array of full matrices]
 INFO: main.c(391): Reading dest /home/yaroslav/model/model_architecture/ua.untied.mdef
 INFO: model_def_io.c(573): Model definition info:
 INFO: model_def_io.c(574): 7543 total models defined (49 base, 7494 tri)
@@ -7646,6 +7646,6 @@ INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_u
 INFO: main.c(549): Writing dest /home/yaroslav/model/model_parameters/ua.cd_semi_untied/means
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/means [1x4x256 array]
 INFO: main.c(561): Writing dest /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances [1x4x256 array]
+INFO: s3gau_full_io.c(249): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances [1x4x256 array of full matrices]
 [mx 22626(0) +=   144] [mx 22627(1) +=   145] [mx 22628(2) +=   146] 
-Wed Apr  6 00:42:40 2016
+Wed Apr  6 23:42:45 2016

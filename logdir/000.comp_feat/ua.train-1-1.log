@@ -19,7 +19,7 @@ Current configuration:
 -input_endian		little		little
 -lifter			0		22
 -logspec		no		no
--lowerf			133.33334	1.300000e+02
+-lowerf			133.33334	2.000000e+02
 -mach_endian		little		little
 -mswav			no		yes
 -ncep			13		13
@@ -140,4 +140,4 @@ INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0080.wav to /home
 INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0081.wav to /home/yaroslav/model/feat/uk_0081.mfc
 INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0082.wav to /home/yaroslav/model/feat/uk_0082.mfc
 INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0083.wav to /home/yaroslav/model/feat/uk_0083.mfc
-Wed Apr  6 00:10:14 2016
+Wed Apr  6 22:31:54 2016
