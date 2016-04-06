@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="REFRESH" content="60">
+<title>ua</title>
+<style type="text/css">
+body {
+ background: #f0f0f5;
+}
+p,span {
+ font-family: monospace;
+}
+p {
+ margin-right: 6em;
+}
+p.phase {
+ font-weight: bold;
+ margin-bottom: 0;
+}
+p.result, p.WARNING, p.error {
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: 5em;
+}
+span.status {
+ float: right;
+ margin-top: -1em;
+}
+.passed, .completed {
+ color: #00D000;
+}
+.WARNING, .warning {
+ color: #555500;
+}
+.FAILED, .error {
+ color: #DD0000;
+}
+</style>
+</head>
+<body>
+<h1 class="experiment">/home/yaroslav/model</h1>
+<h2 class="hostname">Training ua on ubuntu</h2>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2016-04-06 00:10)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///home/yaroslav/model/logdir/000.comp_feat/ua.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2016-04-06 00:10)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 2283 words using 49 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.544777777777778</p>
+<p class='result'>This is a small amount of data, no comment at this time</p>
+<span class='status WARNING'>WARNING</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 2280</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2016-04-06 00:10)</h3>
+<p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 01 Train LDA transformation	(2016-04-06 00:10)</h3>
+<p>Skipped for multistream setup, see CFG_NUM_STREAMS configuration</p>
+<p>LDA/MLLT only has sense for single stream features</p>
+<p>Skipping LDA training</p>
+<hr>
+<h3>MODULE: 02 Train MLLT transformation	(2016-04-06 00:10)</h3>
+<p>Skipped for multistream setup, see CFG_NUM_STREAMS configuration</p>
+<p>LDA/MLLT only has sense for single stream features</p>
+<p>Skipping MLLT training</p>
+<hr>
+<h3>MODULE: 05 Vector Quantization	(2016-04-06 00:10)</h3>
+<p class='result'>agg_seg <a href="file:///home/yaroslav/model/logdir/05.vector_quantize/ua.vq.agg_seg.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>kmeans_init <a href="file:///home/yaroslav/model/logdir/05.vector_quantize/ua.kmeans.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2016-04-06 00:11)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2016-04-06 00:11)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2016-04-06 00:11)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2016-04-06 00:11)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...</span>
+<span class='progress'>models...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Flat initialize</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_mixw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.duplicate_codebook.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 72 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -196.609586018183</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -190.270111911877</p>
+<p class='result'>Convergence Ratio = 6.33947410630628</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -187.529362885313</p>
+<p class='result'>Convergence Ratio = 2.74074902656403</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -185.688063620916</p>
+<p class='result'>Convergence Ratio = 1.8412992643965</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -184.809121270714</p>
+<p class='result'>Convergence Ratio = 0.87894235020218</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -184.350980360824</p>
+<p class='result'>Convergence Ratio = 0.458140909890091</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 7 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -184.051572146141</p>
+<p class='result'>Convergence Ratio = 0.299408214683382</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 8 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.8-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -183.845645770413</p>
+<p class='result'>Convergence Ratio = 0.205926375728154</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 9 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.9-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 9</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.9.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -183.703958196839</p>
+<p class='result'>Convergence Ratio = 0.141687573573819</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 10 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.10-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 10</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.256.10.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Split Gaussian not performed for semi continuous or tied-mixture</p>
+<p class='result'>Maximum desired iterations 10 performed. Terminating CI training</p>
+<p>Training for 256 Gaussian(s) completed after 10 iterations</p>
+<hr>
+<h3>MODULE: 30 Training Context Dependent models	(2016-04-06 00:42)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Initialization</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.make_alltriphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_mixw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.copycitocd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for iteration: 1 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -189.601943143866</p>
+<p class='result'>Baum welch starting for iteration: 2 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -183.757916660008</p>
+<p class='result'>Convergence Ratio = 5.84402648385759</p>
+<p class='result'>Baum welch starting for iteration: 3 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -180.495533645472</p>
+<p class='result'>Convergence Ratio = 3.26238301453586</p>
+<p class='result'>Baum welch starting for iteration: 4 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -179.75407085444</p>
+<p class='result'>Convergence Ratio = 0.741462791032006</p>
+<p class='result'>Baum welch starting for iteration: 5 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -179.369383765587</p>
+<p class='result'>Convergence Ratio = 0.384687088853013</p>
+<p class='result'>Baum welch starting for iteration: 6 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -179.073437841235</p>
+<p class='result'>Convergence Ratio = 0.295945924351656</p>
+<p class='result'>Baum welch starting for iteration: 7 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -178.890628911722</p>
+<p class='result'>Convergence Ratio = 0.18280892951276</p>
+<p class='result'>Baum welch starting for iteration: 8 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.8-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -178.730244970357</p>
+<p class='result'>Convergence Ratio = 0.160383941364529</p>
+<p class='result'>Baum welch starting for iteration: 9 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.9-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 9</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.9.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -178.622594374045</p>
+<p class='result'>Convergence Ratio = 0.107650596312453</p>
+<p class='result'>Baum welch starting for iteration: 10 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.10-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 10</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.10.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -178.523785934579</p>
+<p class='result'>Training completed after 10 iterations</p>
+<hr>
+<h3>MODULE: 40 Build Trees	(2016-04-06 00:46)</h3>
+<p class='phase'>Phase 1: Cleaning up old log files...</p>
+<p class='phase'>Phase 2: Make Questions</p>
+<p class='result'>make_quests <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.make_questions.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Tree building</p>
+<p class='result'>Processing all phones with each state</p>
+<p class='result'>ALLPHONES 0 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ALLPHONES 1 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ALLPHONES 2 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.2.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 45 Prune Trees	(2016-04-06 01:26)</h3>
+<p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.build.alltriphones.mdef.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 1: Tree Pruning</p>
+<p class='result'>prunetree <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.prunetree.1000.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 2: State Tying</p>
+<p class='result'>tiestate <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.tiestate.1000.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 50 Training Context dependent models	(2016-04-06 01:26)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Copy CI to CD initialize</p>
+<p class='result'>init_mixw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.copy.ci.2.cd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 1 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 1 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.1-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -183.661931318813</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 2 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 2 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.2-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -181.716337216425</p>
+<p class='result'>Convergence Ratio = 1.9455941023879</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 3 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 3 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.3-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -181.288770993464</p>
+<p class='result'>Convergence Ratio = 0.427566222960735</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 4 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 4 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.4-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -181.08183256364</p>
+<p class='result'>Convergence Ratio = 0.206938429824447</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 5 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 5 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.5-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -180.954260481418</p>
+<p class='result'>Convergence Ratio = 0.12757208222186</p>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 6 (1 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Baum welch starting for 256 Gaussian(s), iteration: 6 (2 of 2)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.6-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.256.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -180.865519316917</p>
+<p class='result'>mk_s2sendump <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.mk_s2sendump.pocketsphinx">Log File</a></p><span class='status completed'>completed</span>
+<p>Training for 256 Gaussian(s) completed after 6 iterations</p>
+<hr>
+<h3>MODULE: 60 Lattice Generation	(2016-04-06 01:32)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 61 Lattice Pruning	(2016-04-06 01:32)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 62 Lattice Format Conversion	(2016-04-06 01:32)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 65 MMIE Training	(2016-04-06 01:32)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 90 deleted interpolation	(2016-04-06 01:32)</h3>
+<p class='phase'>Phase 1: Cleaning up directories: logs...</p>
+<p class='phase'>Phase 2: Doing interpolation...</p>
+<p class='result'>delint <a href="file:///home/yaroslav/model/logdir/90.deleted_interpolation/ua.deletedintrep-1000.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Dumping senones for PocketSphinx...</p>
+<p class='result'>mk_s2sendump <a href="file:///home/yaroslav/model/logdir/90.deleted_interpolation/ua.s2sendump-1000.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-06 01:32)</h3>
+<p class='result'>Decoding 0 segments starting at 0 (part 1 of 1) </p>
+<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><p class='error'>ERROR: FATAL: "batch.c", line 815: Failed to open control file '/home/yaroslav/model/etc/ua_test.fileids': No such file or directory</p>
+<span class='status FAILED'>FAILED</span>
+<p class='error'>ERROR: Failed to start pocketsphinx_batch</p>
+<p>        Aligning results to find error rate</p>

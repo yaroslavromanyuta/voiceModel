@@ -1,0 +1,54 @@
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 0, #freed 0, #freelist 50
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x17ff060 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 60, #freed 0, #freelist 40
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x17ff3d0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff060 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 600, #freed 0, #freelist 0
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x1801630 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x18012c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800f50 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800be0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800870 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800500 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800190 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffe20 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffab0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff060 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff3d0 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 600, #freed 600, #freelist 600
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x1801630 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x18012c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800f50 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800be0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800870 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800500 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800190 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffe20 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffab0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff060 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff3d0 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 1200, #freed 600, #freelist 0
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x1801630 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x18012c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800f50 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800be0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800870 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800500 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x1800190 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffe20 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ffab0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff060 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x17ff3d0 (50 * 16 bytes)

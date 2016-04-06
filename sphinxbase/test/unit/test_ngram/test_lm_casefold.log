@@ -1,0 +1,6 @@
+INFO: ngram_model_trie.c(347): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(358): Header doesn't match
+INFO: ngram_model_trie.c(438): Trying to read LM in DMP format
+INFO: ngram_model_trie.c(520): ngrams 1=400, 2=1082, 3=1307
+INFO: lm_trie.c(473): Training quantizer
+INFO: lm_trie.c(481): Building LM trie

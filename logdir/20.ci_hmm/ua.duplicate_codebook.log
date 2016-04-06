@@ -1,0 +1,157 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-dest_meanfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
+-dest_mixwfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights
+-dest_moddeffn		/home/yaroslav/model/model_architecture/ua.ci.mdef
+-dest_tmatfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices
+-dest_ts2cbfn		.semi.
+-dest_varfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-src_meanfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
+-src_mixwfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights
+-src_moddeffn		/home/yaroslav/model/model_architecture/ua.ci.mdef
+-src_tmatfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices
+-src_ts2cbfn		.semi.
+-src_varfn		/home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
+
+INFO: main.c(261): Reading src /home/yaroslav/model/model_architecture/ua.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 49 total models defined (49 base, 0 tri)
+INFO: model_def_io.c(575): 196 total states
+INFO: model_def_io.c(576): 147 total tied states
+INFO: model_def_io.c(577): 147 total tied CI states
+INFO: model_def_io.c(578): 49 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(272): Generating semi-continous ts2cb mapping
+INFO: main.c(299): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights [147x4x256 array]
+INFO: main.c(309): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices
+INFO: s3tmat_io.c(118): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices [49x3x4 array]
+INFO: main.c(318): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means [1x4x256 array]
+INFO: main.c(342): Reading src /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array]
+INFO: main.c(391): Reading dest /home/yaroslav/model/model_architecture/ua.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 49 total models defined (49 base, 0 tri)
+INFO: model_def_io.c(575): 196 total states
+INFO: model_def_io.c(576): 147 total tied states
+INFO: model_def_io.c(577): 147 total tied CI states
+INFO: model_def_io.c(578): 49 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(401): Generating semi-continous ts2cb mapping
+INFO: main.c(431): Calculating initial model parameters
+INFO: main.c(439): Alloc 49x3x4 dest tmat
+INFO: main.c(450): Alloc 147x4x256 dest mixw
+INFO: main.c(463): Alloc 1x4x256 dest mean and var
+         A <- A         : [tm     0 +=     0]
+[mx     0(0) +=     0] [mg     0(0) <-     0] [mx     1(1) +=     1] [mx     2(2) +=     2] 
+         B <- B         : [tm     1 +=     1]
+[mx     3(0) +=     3] [mx     4(1) +=     4] [mx     5(2) +=     5] 
+        BB <- BB        : [tm     2 +=     2]
+[mx     6(0) +=     6] [mx     7(1) +=     7] [mx     8(2) +=     8] 
+         C <- C         : [tm     3 +=     3]
+[mx     9(0) +=     9] [mx    10(1) +=    10] [mx    11(2) +=    11] 
+        CC <- CC        : [tm     4 +=     4]
+[mx    12(0) +=    12] [mx    13(1) +=    13] [mx    14(2) +=    14] 
+        CH <- CH        : [tm     5 +=     5]
+[mx    15(0) +=    15] [mx    16(1) +=    16] [mx    17(2) +=    17] 
+       CHH <- CHH       : [tm     6 +=     6]
+[mx    18(0) +=    18] [mx    19(1) +=    19] [mx    20(2) +=    20] 
+         D <- D         : [tm     7 +=     7]
+[mx    21(0) +=    21] [mx    22(1) +=    22] [mx    23(2) +=    23] 
+        DD <- DD        : [tm     8 +=     8]
+[mx    24(0) +=    24] [mx    25(1) +=    25] [mx    26(2) +=    26] 
+         E <- E         : [tm     9 +=     9]
+[mx    27(0) +=    27] [mx    28(1) +=    28] [mx    29(2) +=    29] 
+         F <- F         : [tm    10 +=    10]
+[mx    30(0) +=    30] [mx    31(1) +=    31] [mx    32(2) +=    32] 
+         G <- G         : [tm    11 +=    11]
+[mx    33(0) +=    33] [mx    34(1) +=    34] [mx    35(2) +=    35] 
+        GG <- GG        : [tm    12 +=    12]
+[mx    36(0) +=    36] [mx    37(1) +=    37] [mx    38(2) +=    38] 
+         H <- H         : [tm    13 +=    13]
+[mx    39(0) +=    39] [mx    40(1) +=    40] [mx    41(2) +=    41] 
+        HH <- HH        : [tm    14 +=    14]
+[mx    42(0) +=    42] [mx    43(1) +=    43] [mx    44(2) +=    44] 
+         I <- I         : [tm    15 +=    15]
+[mx    45(0) +=    45] [mx    46(1) +=    46] [mx    47(2) +=    47] 
+         K <- K         : [tm    16 +=    16]
+[mx    48(0) +=    48] [mx    49(1) +=    49] [mx    50(2) +=    50] 
+        KK <- KK        : [tm    17 +=    17]
+[mx    51(0) +=    51] [mx    52(1) +=    52] [mx    53(2) +=    53] 
+         L <- L         : [tm    18 +=    18]
+[mx    54(0) +=    54] [mx    55(1) +=    55] [mx    56(2) +=    56] 
+        LL <- LL        : [tm    19 +=    19]
+[mx    57(0) +=    57] [mx    58(1) +=    58] [mx    59(2) +=    59] 
+         M <- M         : [tm    20 +=    20]
+[mx    60(0) +=    60] [mx    61(1) +=    61] [mx    62(2) +=    62] 
+        MM <- MM        : [tm    21 +=    21]
+[mx    63(0) +=    63] [mx    64(1) +=    64] [mx    65(2) +=    65] 
+         N <- N         : [tm    22 +=    22]
+[mx    66(0) +=    66] [mx    67(1) +=    67] [mx    68(2) +=    68] 
+        NN <- NN        : [tm    23 +=    23]
+[mx    69(0) +=    69] [mx    70(1) +=    70] [mx    71(2) +=    71] 
+         O <- O         : [tm    24 +=    24]
+[mx    72(0) +=    72] [mx    73(1) +=    73] [mx    74(2) +=    74] 
+         P <- P         : [tm    25 +=    25]
+[mx    75(0) +=    75] [mx    76(1) +=    76] [mx    77(2) +=    77] 
+        PP <- PP        : [tm    26 +=    26]
+[mx    78(0) +=    78] [mx    79(1) +=    79] [mx    80(2) +=    80] 
+         R <- R         : [tm    27 +=    27]
+[mx    81(0) +=    81] [mx    82(1) +=    82] [mx    83(2) +=    83] 
+        RR <- RR        : [tm    28 +=    28]
+[mx    84(0) +=    84] [mx    85(1) +=    85] [mx    86(2) +=    86] 
+         S <- S         : [tm    29 +=    29]
+[mx    87(0) +=    87] [mx    88(1) +=    88] [mx    89(2) +=    89] 
+        SH <- SH        : [tm    30 +=    30]
+[mx    90(0) +=    90] [mx    91(1) +=    91] [mx    92(2) +=    92] 
+       SHH <- SHH       : [tm    31 +=    31]
+[mx    93(0) +=    93] [mx    94(1) +=    94] [mx    95(2) +=    95] 
+       SIL <- SIL       : [tm    32 +=    32]
+[mx    96(0) +=    96] [mx    97(1) +=    97] [mx    98(2) +=    98] 
+        SS <- SS        : [tm    33 +=    33]
+[mx    99(0) +=    99] [mx   100(1) +=   100] [mx   101(2) +=   101] 
+         T <- T         : [tm    34 +=    34]
+[mx   102(0) +=   102] [mx   103(1) +=   103] [mx   104(2) +=   104] 
+        TT <- TT        : [tm    35 +=    35]
+[mx   105(0) +=   105] [mx   106(1) +=   106] [mx   107(2) +=   107] 
+         U <- U         : [tm    36 +=    36]
+[mx   108(0) +=   108] [mx   109(1) +=   109] [mx   110(2) +=   110] 
+         V <- V         : [tm    37 +=    37]
+[mx   111(0) +=   111] [mx   112(1) +=   112] [mx   113(2) +=   113] 
+        VV <- VV        : [tm    38 +=    38]
+[mx   114(0) +=   114] [mx   115(1) +=   115] [mx   116(2) +=   116] 
+         Y <- Y         : [tm    39 +=    39]
+[mx   117(0) +=   117] [mx   118(1) +=   118] [mx   119(2) +=   119] 
+        YA <- YA        : [tm    40 +=    40]
+[mx   120(0) +=   120] [mx   121(1) +=   121] [mx   122(2) +=   122] 
+        YE <- YE        : [tm    41 +=    41]
+[mx   123(0) +=   123] [mx   124(1) +=   124] [mx   125(2) +=   125] 
+        YI <- YI        : [tm    42 +=    42]
+[mx   126(0) +=   126] [mx   127(1) +=   127] [mx   128(2) +=   128] 
+        YU <- YU        : [tm    43 +=    43]
+[mx   129(0) +=   129] [mx   130(1) +=   130] [mx   131(2) +=   131] 
+        YY <- YY        : [tm    44 +=    44]
+[mx   132(0) +=   132] [mx   133(1) +=   133] [mx   134(2) +=   134] 
+         Z <- Z         : [tm    45 +=    45]
+[mx   135(0) +=   135] [mx   136(1) +=   136] [mx   137(2) +=   137] 
+        ZH <- ZH        : [tm    46 +=    46]
+[mx   138(0) +=   138] [mx   139(1) +=   139] [mx   140(2) +=   140] 
+       ZHH <- ZHH       : [tm    47 +=    47]
+[mx   141(0) +=   141] [mx   142(1) +=   142] [mx   143(2) +=   143] 
+        ZZ <- ZZ        : INFO: main.c(529): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/transition_matrices [49x3x4 array]
+INFO: main.c(540): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/mixture_weights [147x4x256 array]
+INFO: main.c(549): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/means [1x4x256 array]
+INFO: main.c(561): Writing dest /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_semi_flatinitial/variances [1x4x256 array]
+[tm    48 +=    48]
+[mx   144(0) +=   144] [mx   145(1) +=   145] [mx   146(2) +=   146] 
+Wed Apr  6 00:11:25 2016

@@ -1,0 +1,33 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-allphones	no	yes
+-example	no	no
+-help		no	no
+-itreedir		/home/yaroslav/model/trees/ua.unpruned
+-minocc		0.0	0.000000e+00
+-moddeffn		/home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+-nseno			1000
+-otreedir		/home/yaroslav/model/trees/ua.1000
+-psetfn			/home/yaroslav/model/model_architecture/ua.tree_questions
+
+INFO: main.c(76): Reading: /home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 30170 total models defined (49 base, 30121 tri)
+INFO: model_def_io.c(575): 120680 total states
+INFO: model_def_io.c(576): 90510 total tied states
+INFO: model_def_io.c(577): 147 total tied CI states
+INFO: model_def_io.c(578): 49 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(82): Reading: /home/yaroslav/model/model_architecture/ua.tree_questions
+INFO: main.c(185): ALLPHONES-0	2001 [0 < 0.000000e+00]
+INFO: main.c(185): ALLPHONES-1	2001 [0 < 0.000000e+00]
+INFO: main.c(185): ALLPHONES-2	2001 [0 < 0.000000e+00]
+INFO: main.c(270): Prior to pruning n_seno= 6003
+INFO: main.c(278): n_twig= 2660
+INFO: main.c(308): Pruning 5003 nodes
+INFO: main.c(386): ALLPHONES-0	691
+INFO: main.c(386): ALLPHONES-1	649
+INFO: main.c(386): ALLPHONES-2	657
+!!!!!!!!Allocated 115 lines
+Wed Apr  6 01:26:44 2016

@@ -1,0 +1,25 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-allphones	no	yes
+-example	no	no
+-help		no	no
+-imoddeffn		/home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+-omoddeffn		/home/yaroslav/model/model_architecture/ua.1000.mdef
+-psetfn			/home/yaroslav/model/model_architecture/ua.tree_questions
+-treedir		/home/yaroslav/model/trees/ua.1000
+
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 30170 total models defined (49 base, 30121 tri)
+INFO: model_def_io.c(575): 120680 total states
+INFO: model_def_io.c(576): 90510 total tied states
+INFO: model_def_io.c(577): 147 total tied CI states
+INFO: model_def_io.c(578): 49 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(93): Reading: /home/yaroslav/model/model_architecture/ua.tree_questions
+INFO: main.c(124): ALLPHONES-0: offset 147
+INFO: main.c(124): ALLPHONES-1: offset 493
+INFO: main.c(124): ALLPHONES-2: offset 818
+INFO: main.c(145): n_seno= 1147
+!!!!!!!!Allocated 115 lines
+Wed Apr  6 01:26:44 2016

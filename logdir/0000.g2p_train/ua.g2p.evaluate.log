@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/sphinxtrain/scripts/0000.g2p_train/evaluate.py", line 111, in <module>
+    process_testset( test_file, wordlist, ref_file )
+  File "/usr/local/lib/sphinxtrain/scripts/0000.g2p_train/evaluate.py", line 42, in process_testset
+    for entry in open(testfile):
+IOError: [Errno 2] No such file or directory: '/home/yaroslav/model/g2p/ua.test'
+Tue Apr  5 22:37:37 2016

@@ -1,0 +1,37 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-dictfn			/home/yaroslav/model/etc/ua.dic
+-example	no	no
+-fdictfn		/home/yaroslav/model/etc/ua.filler
+-help		no	no
+-ignorewpos	no	no
+-inCDmdef		
+-inCImdef		
+-lsnfn			
+-maxtriphones	100000	100000
+-minocc		1	1
+-n_state_pm	3	3
+-oalltphnmdef		/home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+-ocimdef		
+-ocountfn		
+-ountiedmdef		
+-phnlstfn		/home/yaroslav/model/model_architecture/ua.phonelist
+-triphnlstfn		
+
+INFO: main.c(94): Will write alltriphone mdef file /home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+INFO: mk_mdef_gen.c(189): 0 single word triphones in input phone list
+INFO: mk_mdef_gen.c(190): 0 word beginning triphones in input phone list
+INFO: mk_mdef_gen.c(191): 0 word internal triphones in input phone list
+INFO: mk_mdef_gen.c(192): 0 word ending triphones in input phone list
+INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.dic
+INFO: mk_mdef_gen.c(322): 2280 words in dict /home/yaroslav/model/etc/ua.dic
+INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.filler
+INFO: mk_mdef_gen.c(322): 3 words in dict /home/yaroslav/model/etc/ua.filler
+INFO: mk_mdef_gen.c(442): 2283 words in dictionary
+INFO: mk_mdef_gen.c(443): 9860 unique single word triphones in dictionary
+INFO: mk_mdef_gen.c(444): 9418 unique word beginning triphones in dictionary
+INFO: mk_mdef_gen.c(445): 3187 unique word internal triphones in dictionary
+INFO: mk_mdef_gen.c(446): 7656 unique word ending triphones in dictionary
+INFO: mk_mdef_gen.c(897): 49 n_base, 30121 n_tri
+INFO: mk_mdef_gen.c(969): Wrote mdef file /home/yaroslav/model/model_architecture/ua.alltriphones.mdef
+Wed Apr  6 01:26:43 2016

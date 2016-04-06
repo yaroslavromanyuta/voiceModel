@@ -1,0 +1,209 @@
+        INFO: main.c(229): Compiled on Mar 30 2016 at 05:22:39
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-2passvar	no		no
+-abeam		1e-100		1.000000e-90
+-accumdir			/home/yaroslav/model/bwaccumdir/ua_buff_2
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-bbeam		1e-100		1.000000e-10
+-cb2mllrfn	.1cls.		.1cls.
+-cepdir				/home/yaroslav/model/feat
+-cepext		mfc		mfc
+-ceplen		13		13
+-ckptintv			0
+-cmn		current		current
+-cmninit	8.0		8.0
+-ctlfn				/home/yaroslav/model/etc/ua_train.fileids
+-diagfull	no		no
+-dictfn				/home/yaroslav/model/etc/ua.dic
+-example	no		no
+-fdictfn			/home/yaroslav/model/etc/ua.filler
+-feat		1s_c_d_dd	s2_4x
+-fullvar	no		no
+-help		no		no
+-hmmdir				
+-latdir				
+-latext				
+-lda				
+-ldadim		0		0
+-lsnfn				/home/yaroslav/model/etc/ua_train.transcription
+-lw		11.5		1.150000e+01
+-maxuttlen	0		0
+-meanfn				/home/yaroslav/model/model_parameters/ua.cd_semi_initial/means
+-meanreest	yes		yes
+-mixwfn				/home/yaroslav/model/model_parameters/ua.cd_semi_initial/mixture_weights
+-mixwreest	yes		yes
+-mllrmat			
+-mmie		no		no
+-mmie_type	rand		rand
+-moddeffn			/home/yaroslav/model/model_architecture/ua.1000.mdef
+-mwfloor	0.00001		1.000000e-05
+-npart				2
+-nskip				0
+-outphsegdir			
+-outputfullpath	no		no
+-part				2
+-pdumpdir			
+-phsegdir			
+-phsegext	phseg		phseg
+-runlen		-1		-1
+-sentdir			
+-sentext	sent		sent
+-spthresh	0.0		0.000000e+00
+-svspec				
+-timing		yes		no
+-tmatfn				/home/yaroslav/model/model_parameters/ua.cd_semi_initial/transition_matrices
+-tmatreest	yes		yes
+-topn		4		256
+-tpfloor	0.0001		1.000000e-05
+-ts2cbfn			.semi.
+-varfloor	0.00001		1.000000e-04
+-varfn				/home/yaroslav/model/model_parameters/ua.cd_semi_initial/variances
+-varnorm	no		no
+-varreest	yes		yes
+-viterbi	no		no
+
+INFO: feat.c(715): Initializing feature stream to type: 's2_4x', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: main.c(318): Reading /home/yaroslav/model/model_architecture/ua.1000.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 30170 total models defined (49 base, 30121 tri)
+INFO: model_def_io.c(575): 120680 total states
+INFO: model_def_io.c(576): 1147 total tied states
+INFO: model_def_io.c(577): 147 total tied CI states
+INFO: model_def_io.c(578): 49 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/model_parameters/ua.cd_semi_initial/mixture_weights [1147x4x256 array]
+INFO: mod_inv.c(408): Failed to norm for 3 mixw: 36 37 38
+INFO: s3tmat_io.c(118): Read /home/yaroslav/model/model_parameters/ua.cd_semi_initial/transition_matrices [49x3x4 array]
+INFO: mod_inv.c(301): inserting tprob floor 1.000000e-05 and renormalizing
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_semi_initial/means [1x4x256 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_semi_initial/variances [1x4x256 array]
+INFO: gauden.c(176): 1 total mgau
+INFO: gauden.c(150): 4 feature streams (|0|=12 |1|=24 |2|=3 |3|=12 )
+INFO: gauden.c(187): 256 total densities
+INFO: gauden.c(90): min_var=1.000000e-04
+INFO: gauden.c(165): compute 256 densities/frame
+INFO: main.c(431): Will reestimate mixing weights.
+INFO: main.c(433): Will reestimate means.
+INFO: main.c(435): Will reestimate variances.
+INFO: main.c(443): Will reestimate transition matrices
+INFO: main.c(456): Reading main dictionary: /home/yaroslav/model/etc/ua.dic
+INFO: lexicon.c(221): 2280 entries added from /home/yaroslav/model/etc/ua.dic
+INFO: main.c(466): Reading filler dictionary: /home/yaroslav/model/etc/ua.filler
+INFO: lexicon.c(221): 3 entries added from /home/yaroslav/model/etc/ua.filler
+INFO: corpus.c(403): skipping 41 utts.
+INFO: corpus.c(407): Last utt skipped: uk_0041
+INFO: corpus.c(1062): Will process all remaining utts starting at 41
+INFO: main.c(665): Reestimation: Baum-Welch
+INFO: cmn.c(183): CMN: 50.84  2.41  7.27  3.64 -1.01 -1.43 -13.51 -1.05  0.40  1.61  0.28 -0.19 -0.54 
+column defns
+	<seq>
+	<id>
+	<n_frame_in>
+	<n_frame_del>
+	<n_state_shmm>
+	<avg_states_alpha>
+	<avg_states_beta>
+	<avg_states_reest>
+	<avg_posterior_prune>
+	<frame_log_lik>
+	<utt_log_lik>
+	... timing info ... 
+utt>    41                   uk_0042 1646    0   876 28  2 5 4.545725e-12 -1.835685e+02 -3.021537e+05
+INFO: cmn.c(183): CMN: 52.97  1.13  5.10  3.98 -2.58 -1.10 -13.12 -1.23 -2.60  2.00  0.76 -0.14  1.41 
+utt>    42                   uk_0043 2462    0  1300 28  2 5 5.106617e-12 -1.848797e+02 -4.551738e+05
+INFO: cmn.c(183): CMN: 47.33  0.72  5.49  6.92 -0.10 -1.42 -12.70  0.92 -1.30  0.88  1.73 -2.23 -0.19 
+utt>    43                   uk_0044 2021    0  1212 29  2 5 5.253439e-12 -1.841064e+02 -3.720789e+05
+INFO: cmn.c(183): CMN: 49.48  1.30  4.75  5.46 -1.41 -2.25 -11.66  1.71  0.65 -0.02  2.88 -2.86  0.86 
+utt>    44                   uk_0045 2744    0  1688 32  3 6 5.212918e-12 -1.831954e+02 -5.026882e+05
+INFO: cmn.c(183): CMN: 50.49  0.83  6.06  6.66 -1.58 -1.24 -12.97  3.52 -2.33  2.17  1.56 -2.07  0.42 
+utt>    45                   uk_0046 2606    0  1496 30  2 5 5.107284e-12 -1.830363e+02 -4.769925e+05
+INFO: cmn.c(183): CMN: 51.12  1.87  5.64  5.19 -2.01 -0.18 -14.00  1.43 -0.48  0.67  1.19 -1.58  0.22 
+utt>    46                   uk_0047 2791    0  1676 28  2 5 5.265080e-12 -1.833241e+02 -5.116576e+05
+INFO: cmn.c(183): CMN: 50.18  1.91  4.99  6.60  0.35 -0.34 -13.93  2.13 -1.28  1.07  1.04 -1.76  0.59 
+utt>    47                   uk_0048 2181    0  1320 28  2 5 5.351726e-12 -1.822146e+02 -3.974100e+05
+INFO: cmn.c(183): CMN: 50.95  1.37  6.82  7.28 -1.84 -2.61 -15.60  1.73 -1.20  2.75  1.88 -1.65 -0.13 
+utt>    48                   uk_0049 2144    0  1288 30  3 6 5.627634e-12 -1.814864e+02 -3.891068e+05
+INFO: cmn.c(183): CMN: 48.77  0.92  5.22  5.94  1.17 -0.18 -14.77  0.20  0.75  0.93  2.69 -2.34  0.06 
+utt>    49                   uk_0050 2041    0  1280 29  3 5 5.576534e-12 -1.818780e+02 -3.712130e+05
+INFO: cmn.c(183): CMN: 51.98  3.15  3.81  3.25 -2.76 -2.82 -13.14  2.02 -0.24 -0.20  2.48 -2.89  0.77 
+utt>    50                   uk_0051 2631    0  1572 31  3 6 5.170525e-12 -1.817079e+02 -4.780734e+05
+INFO: cmn.c(183): CMN: 51.33  1.70  6.46  4.08 -2.58 -2.41 -11.44 -1.25 -0.69  1.67  1.20 -1.94  0.66 
+utt>    51                   uk_0052 2204    0  1380 30  3 6 4.920192e-12 -1.811963e+02 -3.993568e+05
+INFO: cmn.c(183): CMN: 52.99  1.99  5.36  5.45 -3.57 -2.35 -10.47  1.34  0.08  1.80  2.13 -2.35  0.26 
+utt>    52                   uk_0053 2650    0  1672 31  3 6 5.267991e-12 -1.836393e+02 -4.866441e+05
+INFO: cmn.c(183): CMN: 53.32  3.30  3.67  5.33 -1.40 -2.41 -13.85  0.11 -0.60  0.15  1.71 -2.04 -0.11 
+utt>    53                   uk_0054 2819    0  1764 30  3 6 5.755935e-12 -1.846860e+02 -5.206298e+05
+INFO: cmn.c(183): CMN: 53.55  4.36  2.42  3.78 -0.58 -1.59 -15.24 -0.80  1.03  1.48  0.59 -1.56 -0.02 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: uk_0055 ignored
+utt>    54                   uk_0055 2527    0  1648 8 
+INFO: cmn.c(183): CMN: 51.15  1.92  4.38  5.69  0.66  0.94 -14.40 -1.86  2.25 -0.46  2.10 -1.97  0.17 
+utt>    55                   uk_0056 2516    0  1556 31  3 6 5.036841e-12 -1.819969e+02 -4.579043e+05
+INFO: cmn.c(183): CMN: 52.13  2.74  6.24  5.03  0.40  0.89 -14.17 -1.59 -1.66  0.20  0.02 -1.31  0.06 
+utt>    56                   uk_0057 2340    0  1384 31  2 5 5.015811e-12 -1.821161e+02 -4.261516e+05
+INFO: cmn.c(183): CMN: 50.14  1.58  3.05  4.13  0.70 -1.52 -9.58  1.84  0.75  1.38  1.55 -1.31  0.23 
+utt>    57                   uk_0058 2069    0  1232 29  3 5 4.438406e-12 -1.811287e+02 -3.747553e+05
+INFO: cmn.c(183): CMN: 52.51  2.45  3.76  7.20 -1.44 -2.23 -11.02  2.21  0.62  2.23  2.24 -1.84  1.80 
+utt>    58                   uk_0059 2643    0  1584 32  3 5 5.195652e-12 -1.831818e+02 -4.841496e+05
+INFO: cmn.c(183): CMN: 50.64  2.18  5.25  7.07 -1.84 -2.20 -10.41 -1.04 -1.31  0.73  1.68 -2.31  1.03 
+utt>    59                   uk_0060 2326    0  1524 30  3 6 5.283069e-12 -1.824656e+02 -4.244149e+05
+INFO: cmn.c(183): CMN: 51.76  0.94  5.76  4.59 -1.66 -1.80 -12.08 -0.46 -0.76  0.30  2.29 -1.71  1.27 
+utt>    60                   uk_0061 2221    0  1276 30  3 6 5.088351e-12 -1.825771e+02 -4.055037e+05
+INFO: cmn.c(183): CMN: 50.42  0.53  5.32  5.87 -0.35 -0.37 -12.18 -1.17  1.48  0.87  1.90 -1.61  0.47 
+utt>    61                   uk_0062 2210    0  1320 31  2 5 4.954353e-12 -1.834858e+02 -4.055036e+05
+INFO: cmn.c(183): CMN: 49.30  2.73  3.18  7.08 -0.15 -1.68 -14.11  0.09  0.67  1.55  2.59 -2.17  0.58 
+utt>    62                   uk_0063 2476    0  1520 33  2 5 5.650801e-12 -1.817251e+02 -4.499513e+05
+INFO: cmn.c(183): CMN: 50.13  2.34  4.24  7.06 -0.48 -3.73 -14.33  0.33  1.22  0.49  2.78 -1.90  1.13 
+utt>    63                   uk_0064 1733    0   992 31  2 5 4.887877e-12 -1.811005e+02 -3.138471e+05
+INFO: cmn.c(183): CMN: 50.79  3.49  3.60  6.78 -0.00 -1.58 -13.91  0.57  0.79  0.61  3.01 -2.68  1.18 
+utt>    64                   uk_0065 2413    0  1468 32  3 6 5.290753e-12 -1.824327e+02 -4.402101e+05
+INFO: cmn.c(183): CMN: 49.76  3.13  6.85  7.77 -1.82 -4.39 -10.58  1.04 -1.45  0.70  1.58 -2.27  1.22 
+utt>    65                   uk_0066 3146    0  2016 33  3 5 5.079762e-12 -1.838580e+02 -5.784173e+05
+INFO: cmn.c(183): CMN: 49.96  1.86  1.48  5.93 -0.98 -3.24 -11.14  2.57 -1.12  1.65  1.84 -2.43  1.02 
+utt>    66                   uk_0067 2594    0  1768 31  3 5 5.606226e-12 -1.822774e+02 -4.728276e+05
+INFO: cmn.c(183): CMN: 53.23  3.35  4.35  6.14 -1.20 -2.11 -15.00  2.97 -3.46  2.37  1.18 -2.49  0.12 
+utt>    67                   uk_0068 2411    0  1364 32  2 5 5.291620e-12 -1.826972e+02 -4.404830e+05
+INFO: cmn.c(183): CMN: 51.78  2.41  5.36  5.09 -1.12 -2.28 -14.34  0.22 -0.67  2.35  2.20 -1.20  0.42 
+utt>    68                   uk_0069 2546    0  1552 32  3 6 5.258780e-12 -1.834773e+02 -4.671331e+05
+INFO: cmn.c(183): CMN: 52.10  3.08  3.84  6.44 -1.20 -2.57 -14.97  0.21  1.18  1.14  2.41 -1.34  0.25 
+utt>    69                   uk_0070 2350    0  1312 30  2 5 5.073609e-12 -1.828130e+02 -4.296105e+05
+INFO: cmn.c(183): CMN: 52.48  1.66  5.31  5.55 -1.21 -1.41 -15.11 -0.31  1.08  0.16  2.27 -2.00  0.23 
+utt>    70                   uk_0071 2533    0  1488 30  2 5 4.751582e-12 -1.831774e+02 -4.639883e+05
+INFO: cmn.c(183): CMN: 51.24  1.22  6.92  3.92  1.68  0.91 -13.52 -1.56  0.93  1.81  0.56 -0.34 -2.06 
+utt>    71                   uk_0072 1803    0   888 30  2 5 5.030550e-12 -1.833075e+02 -3.305034e+05
+INFO: cmn.c(183): CMN: 48.60  1.34  4.25  9.54 -2.35 -3.39 -12.17  1.59  1.14  2.18  2.02 -1.13  1.28 
+utt>    72                   uk_0073 2822    0  1716 33  3 6 5.291164e-12 -1.821029e+02 -5.138944e+05
+INFO: cmn.c(183): CMN: 50.83  1.77  6.02  6.65 -2.09 -3.86 -12.03  1.76  0.29  1.44  1.74 -2.91  1.04 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: uk_0074 ignored
+utt>    73                   uk_0074 2673    0  1652 20 
+INFO: cmn.c(183): CMN: 51.84  1.41  2.55  5.57 -1.89 -5.49 -10.22  2.05  1.98  0.24  1.19 -3.18  1.06 
+utt>    74                   uk_0075 2174    0  1356 31  3 5 5.057551e-12 -1.828685e+02 -3.975560e+05
+INFO: cmn.c(183): CMN: 51.61  3.41  4.80  4.83 -1.35 -5.52 -11.72  2.84 -0.62  1.72  0.69 -2.43  1.56 
+utt>    75                   uk_0076 2179    0  1232 29  2 5 4.833964e-12 -1.849592e+02 -4.030260e+05
+INFO: cmn.c(183): CMN: 52.15  3.90  5.20  2.64  2.13 -1.33 -14.30  0.02 -1.18  0.55  2.21 -1.23  0.90 
+utt>    76                   uk_0077 2362    0  1388 33  3 6 5.312466e-12 -1.852430e+02 -4.375439e+05
+INFO: cmn.c(183): CMN: 49.70  0.20  4.21  2.51  2.02 -2.51 -13.00  2.61 -4.01  2.16 -0.44 -0.49 -0.87 
+utt>    77                   uk_0078 2073    0  1144 30  3 5 5.453944e-12 -1.829905e+02 -3.793394e+05
+INFO: cmn.c(183): CMN: 50.60 -0.25  7.43  4.62  2.67 -0.68 -12.29  0.48 -1.36  3.28  0.96  1.18  0.45 
+utt>    78                   uk_0079 2508    0  1364 30  2 5 4.972566e-12 -1.847791e+02 -4.634259e+05
+INFO: cmn.c(183): CMN: 49.54 -0.22  6.33  5.05  1.03 -1.28 -11.48  1.42 -2.85  2.47  1.48 -1.14  0.89 
+utt>    79                   uk_0080 2118    0  1160 32  3 6 5.216443e-12 -1.806443e+02 -3.826046e+05
+INFO: cmn.c(183): CMN: 51.22  0.25  4.57  0.15  1.55 -3.45 -9.40  2.76 -5.38  1.57 -2.23 -1.36  0.04 
+utt>    80                   uk_0081 1628    0   728 31  2 5 4.667816e-12 -1.814400e+02 -2.953843e+05
+INFO: cmn.c(183): CMN: 53.07  2.02  5.14  3.82 -0.51 -4.17 -11.15  1.97 -0.46  1.79  1.48 -1.43  1.97 
+utt>    81                   uk_0082 2226    0  1288 30  3 5 4.697216e-12 -1.852869e+02 -4.124486e+05
+INFO: cmn.c(183): CMN: 52.69  0.79  5.26  6.58 -2.62 -5.87 -9.42 -1.13 -2.62 -2.27  1.37 -3.73  1.56 
+utt>    82                   uk_0083 1655    0  1008 31  3 5 5.316892e-12 -1.839446e+02 -3.044282e+05
+overall> stats 93015 (-0) -1.829617e+02 -1.701818e+07
+WARN: "accum.c", line 642: The following senones never occur in the input data
+	36 37 38 
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/bwaccumdir/ua_buff_2/mixw_counts [1147x4x256 array]
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/bwaccumdir/ua_buff_2/tmat_counts [49x3x4 array]
+INFO: s3gau_io.c(485): Wrote /home/yaroslav/model/bwaccumdir/ua_buff_2/gauden_counts with means with vars [1x4x256 vector arrays]
+INFO: main.c(999): Counts saved to /home/yaroslav/model/bwaccumdir/ua_buff_2
+Wed Apr  6 01:27:56 2016
