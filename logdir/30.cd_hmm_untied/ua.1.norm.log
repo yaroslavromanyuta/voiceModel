@@ -4,30 +4,105 @@ Current configuration:
 -constE		3.0	3.000000e+00
 -dcountfn		
 -example	no	no
--fullvar	no	yes
+-fullvar	no	no
 -help		no	no
 -inmeanfn		
 -inmixwfn		
 -invarfn		
--meanfn			/home/yaroslav/model/model_parameters/ua.cd_semi_untied/means
--mixwfn			/home/yaroslav/model/model_parameters/ua.cd_semi_untied/mixture_weights
+-meanfn			/home/yaroslav/model/model_parameters/ua.cd_cont_untied/means
+-mixwfn			/home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights
 -mmie		no	no
 -oaccumdir		
 -regmatfn		
 -tiedvar	no	no
--tmatfn			/home/yaroslav/model/model_parameters/ua.cd_semi_untied/transition_matrices
--varfn			/home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances
+-tmatfn			/home/yaroslav/model/model_parameters/ua.cd_cont_untied/transition_matrices
+-varfn			/home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances
 
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_1
-INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [22629x4x256 array]
-INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [49x3x4 array]
-INFO: s3gau_full_io.c(418): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1x4x256 vector arrays]
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [25224x1x1 array]
+INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [50x3x4 array]
+INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [25224x1x1 vector arrays]
 INFO: main.c(321): -2passvar yes
-INFO: main.c(391): Normalizing mean for n_mgau= 1, n_stream= 4, n_density= 256
-INFO: main.c(405): Normalizing fullvar
-INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/mixture_weights [22629x4x256 array]
-INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/transition_matrices [49x3x4 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/means [1x4x256 array]
-INFO: s3gau_full_io.c(249): Wrote /home/yaroslav/model/model_parameters/ua.cd_semi_untied/variances [1x4x256 array of full matrices]
-Wed Apr  6 23:47:33 2016
-Current Overall Likelihood Per Frame = -65.8671750213334
+INFO: main.c(391): Normalizing mean for n_mgau= 25224, n_stream= 1, n_density= 1
+WARN: "gauden.c", line 1565: (mgau= 351, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 352, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 353, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 1002, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 1003, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 1004, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2265, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2266, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2267, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2280, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2281, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 2282, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 3309, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 3310, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 3311, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4119, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4120, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4121, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4368, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4369, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4370, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4818, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4819, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 4820, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6669, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6670, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6671, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6678, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6679, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 6680, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 8757, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 8758, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 8759, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 12390, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 12391, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 12392, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 13653, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 13654, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 13655, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15870, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15871, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15872, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15921, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15922, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 15923, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16335, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16336, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16337, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16743, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16744, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 16745, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 17685, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 17686, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 17687, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18282, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18283, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18284, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18879, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18880, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 18881, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 19722, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 19723, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 19724, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 20118, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 20119, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 20120, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 22803, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 22804, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 22805, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23700, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23701, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23702, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23799, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23800, feat= 0, density= 0) never observed
+WARN: "gauden.c", line 1565: (mgau= 23801, feat= 0, density= 0) never observed
+INFO: main.c(414): Normalizing var
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights [25224x1x1 array]
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_untied/transition_matrices [50x3x4 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_untied/means [25224x1x1 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances [25224x1x1 array]
+Fri Apr  8 00:54:44 2016
+Current Overall Likelihood Per Frame = -141.304825395911
