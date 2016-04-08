@@ -7,7 +7,7 @@ Current configuration:
 -igaufn			/home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/globalmean
 -imixwfn		
 -itmatfn		
--ncbout			150
+-ncbout			153
 -nmixwout		0
 -ntmatout		0
 -ofullgaufn		
@@ -16,7 +16,7 @@ Current configuration:
 -otmatfn		
 
 INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/globalmean [1x1x1 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/means [150x1x1 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/means [153x1x1 array]
 gau 0 <= 0
 gau 1 <= 0
 gau 2 <= 0
@@ -167,4 +167,7 @@ gau 146 <= 0
 gau 147 <= 0
 gau 148 <= 0
 gau 149 <= 0
-Fri Apr  8 00:51:58 2016
+gau 150 <= 0
+gau 151 <= 0
+gau 152 <= 0
+Fri Apr  8 18:26:23 2016

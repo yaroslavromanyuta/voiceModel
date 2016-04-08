@@ -10,15 +10,15 @@ Current configuration:
 -topo			/home/yaroslav/model/model_architecture/ua.topology
 
 INFO: model_def_io.c(573): Model definition info:
-INFO: model_def_io.c(574): 50 total models defined (50 base, 0 tri)
-INFO: model_def_io.c(575): 200 total states
-INFO: model_def_io.c(576): 150 total tied states
-INFO: model_def_io.c(577): 150 total tied CI states
-INFO: model_def_io.c(578): 50 total tied transition matrices
+INFO: model_def_io.c(574): 51 total models defined (51 base, 0 tri)
+INFO: model_def_io.c(575): 204 total states
+INFO: model_def_io.c(576): 153 total tied states
+INFO: model_def_io.c(577): 153 total tied CI states
+INFO: model_def_io.c(578): 51 total tied transition matrices
 INFO: model_def_io.c(579): 4 max state/model
 INFO: model_def_io.c(580): 4 min state/model
-INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/transition_matrices [50x3x4 array]
-INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/mixture_weights [150x1x1 array]
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/transition_matrices [51x3x4 array]
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/mixture_weights [153x1x1 array]
 main.c(83): Reading model definition file /home/yaroslav/model/model_architecture/ua.ci.mdef
-main.c(90): 50 models defined
-Fri Apr  8 00:51:57 2016
+main.c(90): 51 models defined
+Fri Apr  8 18:26:22 2016

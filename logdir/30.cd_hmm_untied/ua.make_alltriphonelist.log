@@ -24,27 +24,27 @@ INFO: mk_mdef_gen.c(190): 0 word beginning triphones in input phone list
 INFO: mk_mdef_gen.c(191): 0 word internal triphones in input phone list
 INFO: mk_mdef_gen.c(192): 0 word ending triphones in input phone list
 INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.dic
-INFO: mk_mdef_gen.c(322): 2748 words in dict /home/yaroslav/model/etc/ua.dic
+INFO: mk_mdef_gen.c(322): 3010 words in dict /home/yaroslav/model/etc/ua.dic
 INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.filler
 INFO: mk_mdef_gen.c(322): 3 words in dict /home/yaroslav/model/etc/ua.filler
-INFO: mk_mdef_gen.c(442): 2751 words in dictionary
-INFO: mk_mdef_gen.c(443): 10850 unique single word triphones in dictionary
-INFO: mk_mdef_gen.c(444): 10745 unique word beginning triphones in dictionary
-INFO: mk_mdef_gen.c(445): 3559 unique word internal triphones in dictionary
-INFO: mk_mdef_gen.c(446): 8773 unique word ending triphones in dictionary
+INFO: mk_mdef_gen.c(442): 3013 words in dictionary
+INFO: mk_mdef_gen.c(443): 16920 unique single word triphones in dictionary
+INFO: mk_mdef_gen.c(444): 11628 unique word beginning triphones in dictionary
+INFO: mk_mdef_gen.c(445): 3771 unique word internal triphones in dictionary
+INFO: mk_mdef_gen.c(446): 13865 unique word ending triphones in dictionary
 INFO: mk_mdef_gen.c(479): Out of vocabulary words in transcript will be mapped to SIL!
-INFO: mk_mdef_gen.c(593): 13234 words in transcripts
-INFO: mk_mdef_gen.c(594): 1058 single word triphones in transcripts
-INFO: mk_mdef_gen.c(595): 10739 word beginning triphones in transcripts
-INFO: mk_mdef_gen.c(596): 37777 word internal triphones in transcripts
-INFO: mk_mdef_gen.c(597): 10739 word ending triphones in transcripts
-INFO: mk_mdef_gen.c(640): 60313 triphones extracted from transcripts
-INFO: mk_mdef_gen.c(641): 8358 unique triphones extracted from transcripts
-INFO: mk_mdef_gen.c(642): 3208 triphones occur once in the transcripts
-INFO: mk_mdef_gen.c(643): 1074 triphones occur twice in the transcripts
-INFO: mk_mdef_gen.c(644): 566 triphones occur thrice in the transcripts
+INFO: mk_mdef_gen.c(593): 13818 words in transcripts
+INFO: mk_mdef_gen.c(594): 1101 single word triphones in transcripts
+INFO: mk_mdef_gen.c(595): 11223 word beginning triphones in transcripts
+INFO: mk_mdef_gen.c(596): 40095 word internal triphones in transcripts
+INFO: mk_mdef_gen.c(597): 11223 word ending triphones in transcripts
+INFO: mk_mdef_gen.c(640): 63642 triphones extracted from transcripts
+INFO: mk_mdef_gen.c(641): 9314 unique triphones extracted from transcripts
+INFO: mk_mdef_gen.c(642): 3794 triphones occur once in the transcripts
+INFO: mk_mdef_gen.c(643): 1209 triphones occur twice in the transcripts
+INFO: mk_mdef_gen.c(644): 624 triphones occur thrice in the transcripts
 INFO: mk_mdef_gen.c(645): The rest of the triphones occur more than three times
 INFO: mk_mdef_gen.c(646): Count threshold is 1
-INFO: mk_mdef_gen.c(897): 50 n_base, 8358 n_tri
+INFO: mk_mdef_gen.c(897): 51 n_base, 9314 n_tri
 INFO: mk_mdef_gen.c(969): Wrote mdef file /home/yaroslav/model/model_architecture/ua.untied.mdef
-Fri Apr  8 00:54:30 2016
+Fri Apr  8 18:29:17 2016

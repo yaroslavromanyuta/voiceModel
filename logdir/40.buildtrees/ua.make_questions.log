@@ -17,22 +17,22 @@ Current configuration:
 
 INFO: main.c(792): Reading: /home/yaroslav/model/model_architecture/ua.ci.mdef
 INFO: model_def_io.c(573): Model definition info:
-INFO: model_def_io.c(574): 50 total models defined (50 base, 0 tri)
-INFO: model_def_io.c(575): 200 total states
-INFO: model_def_io.c(576): 150 total tied states
-INFO: model_def_io.c(577): 150 total tied CI states
-INFO: model_def_io.c(578): 50 total tied transition matrices
+INFO: model_def_io.c(574): 51 total models defined (51 base, 0 tri)
+INFO: model_def_io.c(575): 204 total states
+INFO: model_def_io.c(576): 153 total tied states
+INFO: model_def_io.c(577): 153 total tied CI states
+INFO: model_def_io.c(578): 51 total tied transition matrices
 INFO: model_def_io.c(579): 4 max state/model
 INFO: model_def_io.c(580): 4 min state/model
 INFO: main.c(811): Reading: /home/yaroslav/model/model_parameters/ua.ci_cont/mixture_weights
-INFO: s3mixw_io.c(117): Read /home/yaroslav/model/model_parameters/ua.ci_cont/mixture_weights [150x1x1 array]
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/means [150x1x1 array]
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/variances [150x1x1 array]
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/model_parameters/ua.ci_cont/mixture_weights [153x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/means [153x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/variances [153x1x1 array]
 INFO: main.c(1109): Done building questions using state 0
-INFO: main.c(1110):  20 questions from state 0
+INFO: main.c(1110):  21 questions from state 0
 INFO: main.c(1109): Done building questions using state 1
-INFO: main.c(1110):  20 questions from state 1
+INFO: main.c(1110):  21 questions from state 1
 INFO: main.c(1109): Done building questions using state 2
 INFO: main.c(1110):  21 questions from state 2
 INFO: main.c(1115): Stored questions in /home/yaroslav/model/model_architecture/ua.tree_questions
-Fri Apr  8 00:55:26 2016
+Fri Apr  8 18:30:22 2016

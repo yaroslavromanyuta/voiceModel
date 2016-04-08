@@ -9,26 +9,26 @@ Current configuration:
 -inmeanfn		
 -inmixwfn		
 -invarfn		
--meanfn			/home/yaroslav/model/model_parameters/ua.cd_cont_500/means
--mixwfn			/home/yaroslav/model/model_parameters/ua.cd_cont_500/mixture_weights
+-meanfn			/home/yaroslav/model/model_parameters/ua.cd_cont_1000/means
+-mixwfn			/home/yaroslav/model/model_parameters/ua.cd_cont_1000/mixture_weights
 -mmie		no	no
 -oaccumdir		
 -regmatfn		
 -tiedvar	no	no
--tmatfn			/home/yaroslav/model/model_parameters/ua.cd_cont_500/transition_matrices
--varfn			/home/yaroslav/model/model_parameters/ua.cd_cont_500/variances
+-tmatfn			/home/yaroslav/model/model_parameters/ua.cd_cont_1000/transition_matrices
+-varfn			/home/yaroslav/model/model_parameters/ua.cd_cont_1000/variances
 
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_1
-INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [650x1x16 array]
-INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [50x3x4 array]
-INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [650x1x16 vector arrays]
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [1153x1x16 array]
+INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [51x3x4 array]
+INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [1153x1x16 vector arrays]
 INFO: main.c(321): -2passvar yes
-INFO: main.c(391): Normalizing mean for n_mgau= 650, n_stream= 1, n_density= 16
+INFO: main.c(391): Normalizing mean for n_mgau= 1153, n_stream= 1, n_density= 16
 INFO: main.c(414): Normalizing var
-INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_500/mixture_weights [650x1x16 array]
-INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_500/transition_matrices [50x3x4 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_500/means [650x1x16 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_500/variances [650x1x16 array]
-Fri Apr  8 01:07:43 2016
-Current Overall Likelihood Per Frame = -136.156655630879
-Convergence ratio = 0.352498413352805
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/mixture_weights [1153x1x16 array]
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/transition_matrices [51x3x4 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/means [1153x1x16 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/variances [1153x1x16 array]
+Fri Apr  8 18:44:32 2016
+Current Overall Likelihood Per Frame = -135.177719773759
+Convergence ratio = 0.545959617379395

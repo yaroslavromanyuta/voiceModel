@@ -31,7 +31,7 @@ $CFG_LIFTER = "22"; # Cepstrum lifter is smoothing to improve recognition
 $CFG_VECTOR_LENGTH = 13; # 13 is usually enough
 
 $CFG_MIN_ITERATIONS = 1;  # BW Iterate at least this many times
-$CFG_MAX_ITERATIONS = 10; # BW Don't iterate more than this, somethings likely wrong.
+$CFG_MAX_ITERATIONS = 16; # BW Don't iterate more than this, somethings likely wrong.
 
 # (none/max) Type of AGC to apply to input files
 $CFG_AGC = 'none';

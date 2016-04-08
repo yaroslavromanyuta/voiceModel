@@ -26,25 +26,73 @@ Current configuration:
 
 INFO: main.c(223): Reading: /home/yaroslav/model/model_architecture/ua.untied.mdef
 INFO: model_def_io.c(573): Model definition info:
-INFO: model_def_io.c(574): 8408 total models defined (50 base, 8358 tri)
-INFO: model_def_io.c(575): 33632 total states
-INFO: model_def_io.c(576): 25224 total tied states
-INFO: model_def_io.c(577): 150 total tied CI states
-INFO: model_def_io.c(578): 50 total tied transition matrices
+INFO: model_def_io.c(574): 9365 total models defined (51 base, 9314 tri)
+INFO: model_def_io.c(575): 37460 total states
+INFO: model_def_io.c(576): 28095 total tied states
+INFO: model_def_io.c(577): 153 total tied CI states
+INFO: model_def_io.c(578): 51 total tied transition matrices
 INFO: model_def_io.c(579): 4 max state/model
 INFO: model_def_io.c(580): 4 min state/model
-INFO: main.c(242): Building trees for [FF O I i] through [FF O I i]
-INFO: main.c(269): Covering states |[5805 5807]| == 3
+INFO: main.c(242): Building trees for [FF D І b] through [FF YE І b]
+INFO: main.c(269): Covering states |[6423 6437]| == 15
 INFO: main.c(275): Reading: /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights
-INFO: s3mixw_io.c(173): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights [3x1x1 array]
-INFO: main.c(311): 1 of 1 models have observation count greater than 0.000010
+INFO: s3mixw_io.c(173): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights [15x1x1 array]
+INFO: main.c(311): 5 of 5 models have observation count greater than 0.000010
 INFO: main.c(95): nrm stwt: 0.952 0.048 0.000 
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/means [25224x1x1 array]
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances [25224x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/means [28095x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances [28095x1x1 array]
 INFO: main.c(549): Reading: /home/yaroslav/model/model_architecture/ua.tree_questions
-INFO: main.c(588): 174 total simple questions (166 phone; 8 word bndry)
-INFO: main.c(590): 42 Left Only questions, and 40 Right Only questions
-INFO: dtree.c(1315): Comp split 0
-INFO: dtree.c(1325): stop. b_n->wt_ent_dec (0.000e+00) <= 0
-!!!!!!!!Allocated 66 lines
-Fri Apr  8 00:55:58 2016
+INFO: main.c(588): 180 total simple questions (172 phone; 8 word bndry)
+INFO: main.c(590): 42 Left Only questions, and 42 Right Only questions
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION18 -1 -1.891e+04 2.547e+02 9.883e+01
+|    ( - -6.574e+03 1 0)
+|    ( WDBNDRY_B 0 -1.208e+04 2.414e+02 6.356e+01
+|        ( QUESTION7 -1 -3.370e+03 1.403e+02 1.800e+01
+|            ( - -4.348e+02 1 0)
+|            ( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+|                ( - -1.829e+03 1 0)
+|                ( - -8.553e+02 1 0)))
+|        ( - -8.468e+03 1 0)))
+s>    ( QUESTION18 -1 -1.891e+04 2.547e+02 9.883e+01
+s>        ( - -6.574e+03 1 0)
+s>        ( WDBNDRY_B 0 -1.208e+04 2.414e+02 6.356e+01
+s>            ( QUESTION7 -1 -3.370e+03 1.403e+02 1.800e+01
+s>                ( - -4.348e+02 1 0)
+s>                ( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+s>                    ( - -1.829e+03 1 0)
+s>                    ( - -8.553e+02 1 0)))
+s>            ( - -8.468e+03 1 0)))INFO: dtree.c(1315): Comp split 0
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION7 -1 -3.370e+03 1.403e+02 1.800e+01
+|    ( - -4.348e+02 1 0)
+|    ( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+|        ( - -1.829e+03 1 0)
+|        ( - -8.553e+02 1 0)))
+s>    ( QUESTION7 -1 -3.370e+03 1.403e+02 1.800e+01
+s>        ( - -4.348e+02 1 0)
+s>        ( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+s>            ( - -1.829e+03 1 0)
+s>            ( - -8.553e+02 1 0)))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -1.526e+04 2.193e+02 8.083e+01
+|    ( - -6.574e+03 1 0)
+|    ( - -8.468e+03 1 0))
+s>    ( WDBNDRY_B 0 -1.526e+04 2.193e+02 8.083e+01
+s>        ( - -6.574e+03 1 0)
+s>        ( - -8.468e+03 1 0))INFO: dtree.c(1315): Comp split 1
+INFO: dtree.c(1315): Comp split 2
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+|    ( - -1.829e+03 1 0)
+|    ( - -8.553e+02 1 0))
+s>    ( QUESTION0 -1 -2.795e+03 1.106e+02 1.500e+01
+s>        ( - -1.829e+03 1 0)
+s>        ( - -8.553e+02 1 0))INFO: dtree.c(1315): Comp split 3
+INFO: dtree.c(1315): Comp split 4
+INFO: dtree.c(1318): stop. leaf nodes are specific
+!!!!!!!!Allocated 68 lines
+Fri Apr  8 18:31:06 2016
