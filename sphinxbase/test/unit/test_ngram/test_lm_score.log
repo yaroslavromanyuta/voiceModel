@@ -1,8 +1,0 @@
-INFO: ngram_model_trie.c(347): Trying to read LM in trie binary format
-INFO: ngram_model_trie.c(176): Trying to read LM in arpa format
-INFO: ngram_model_trie.c(192): LM of order 3
-INFO: ngram_model_trie.c(194): #1-grams: 400
-INFO: ngram_model_trie.c(194): #2-grams: 1082
-INFO: ngram_model_trie.c(194): #3-grams: 1307
-INFO: lm_trie.c(473): Training quantizer
-INFO: lm_trie.c(481): Building LM trie
