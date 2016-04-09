@@ -26,33 +26,33 @@ Current configuration:
 
 INFO: main.c(223): Reading: /home/yaroslav/model/model_architecture/ua.untied.mdef
 INFO: model_def_io.c(573): Model definition info:
-INFO: model_def_io.c(574): 9365 total models defined (51 base, 9314 tri)
-INFO: model_def_io.c(575): 37460 total states
-INFO: model_def_io.c(576): 28095 total tied states
+INFO: model_def_io.c(574): 9391 total models defined (51 base, 9340 tri)
+INFO: model_def_io.c(575): 37564 total states
+INFO: model_def_io.c(576): 28173 total tied states
 INFO: model_def_io.c(577): 153 total tied CI states
 INFO: model_def_io.c(578): 51 total tied transition matrices
 INFO: model_def_io.c(579): 4 max state/model
 INFO: model_def_io.c(580): 4 min state/model
 INFO: main.c(242): Building trees for [YY R A i] through [YY V A i]
-INFO: main.c(269): Covering states |[25263 25268]| == 6
+INFO: main.c(269): Covering states |[25326 25331]| == 6
 INFO: main.c(275): Reading: /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights
 INFO: s3mixw_io.c(173): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/mixture_weights [6x1x1 array]
 INFO: main.c(311): 2 of 2 models have observation count greater than 0.000010
 INFO: main.c(95): nrm stwt: 0.000 0.048 0.952 
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/means [28095x1x1 array]
-INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances [28095x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/means [28173x1x1 array]
+INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.cd_cont_untied/variances [28173x1x1 array]
 INFO: main.c(549): Reading: /home/yaroslav/model/model_architecture/ua.tree_questions
-INFO: main.c(588): 180 total simple questions (172 phone; 8 word bndry)
-INFO: main.c(590): 42 Left Only questions, and 42 Right Only questions
+INFO: main.c(588): 174 total simple questions (166 phone; 8 word bndry)
+INFO: main.c(590): 40 Left Only questions, and 42 Right Only questions
 INFO: dtree.c(1439): stop. leaf nodes are specific
 INFO: dtree.c(1478): Final simple tree
-|( QUESTION0 -1 -2.243e+04 2.425e+02 1.208e+02
-|    ( - -7.023e+02 1 0)
-|    ( - -2.149e+04 1 0))
-s>    ( QUESTION0 -1 -2.243e+04 2.425e+02 1.208e+02
-s>        ( - -7.023e+02 1 0)
-s>        ( - -2.149e+04 1 0))INFO: dtree.c(1315): Comp split 0
+|( QUESTION0 -1 -1.440e+04 3.214e+02 1.902e+02
+|    ( - -1.429e+04 1 0)
+|    ( - 2.075e+02 1 0))
+s>    ( QUESTION0 -1 -1.440e+04 3.214e+02 1.902e+02
+s>        ( - -1.429e+04 1 0)
+s>        ( - 2.075e+02 1 0))INFO: dtree.c(1315): Comp split 0
 INFO: dtree.c(1315): Comp split 1
 INFO: dtree.c(1318): stop. leaf nodes are specific
-!!!!!!!!Allocated 68 lines
-Fri Apr  8 18:33:17 2016
+!!!!!!!!Allocated 66 lines
+Fri Apr  8 23:11:24 2016

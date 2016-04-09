@@ -59,4 +59,4 @@ Current configuration:
 INFO: sphinx_fe.c(957): Processing all remaining utterances at position 0
 INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0001.wav to /home/yaroslav/model/feat/uk_0001.mfc
 INFO: sphinx_fe.c(764): Converting /home/yaroslav/model/wav/uk_0002.wav to /home/yaroslav/model/feat/uk_0002.mfc
-Fri Apr  8 18:26:21 2016
+Fri Apr  8 23:01:03 2016

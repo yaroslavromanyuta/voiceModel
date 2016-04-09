@@ -31,8 +31,8 @@ INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/var
 INFO: main.c(1109): Done building questions using state 0
 INFO: main.c(1110):  21 questions from state 0
 INFO: main.c(1109): Done building questions using state 1
-INFO: main.c(1110):  21 questions from state 1
+INFO: main.c(1110):  20 questions from state 1
 INFO: main.c(1109): Done building questions using state 2
-INFO: main.c(1110):  21 questions from state 2
+INFO: main.c(1110):  20 questions from state 2
 INFO: main.c(1115): Stored questions in /home/yaroslav/model/model_architecture/ua.tree_questions
-Fri Apr  8 18:30:22 2016
+Fri Apr  8 23:07:53 2016

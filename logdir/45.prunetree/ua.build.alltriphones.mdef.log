@@ -34,4 +34,4 @@ INFO: mk_mdef_gen.c(445): 3771 unique word internal triphones in dictionary
 INFO: mk_mdef_gen.c(446): 13865 unique word ending triphones in dictionary
 INFO: mk_mdef_gen.c(897): 51 n_base, 46184 n_tri
 INFO: mk_mdef_gen.c(969): Wrote mdef file /home/yaroslav/model/model_architecture/ua.alltriphones.mdef
-Fri Apr  8 18:33:30 2016
+Fri Apr  8 23:11:39 2016

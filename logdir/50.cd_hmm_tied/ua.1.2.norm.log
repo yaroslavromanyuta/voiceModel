@@ -29,6 +29,6 @@ INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1
 INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/transition_matrices [51x3x4 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/means [1153x1x1 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.cd_cont_1000/variances [1153x1x1 array]
-Fri Apr  8 18:33:56 2016
-Current Overall Likelihood Per Frame = -140.25929985547
-Convergence ratio = 1.41812513227669
+Fri Apr  8 23:12:13 2016
+Current Overall Likelihood Per Frame = -51.5822305827305
+Convergence ratio = 1.3378975404697

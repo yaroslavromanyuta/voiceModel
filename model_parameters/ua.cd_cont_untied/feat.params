@@ -4,6 +4,6 @@
 -transform dct
 -lifter 22
 -feat 1s_c_d_dd
--agc none
+-agc max
 -cmn current
--varnorm no
+-varnorm yes
