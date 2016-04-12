@@ -19,20 +19,19 @@ Current configuration:
 -varfn			/home/yaroslav/model/model_parameters/ua.ci_cont/variances
 
 INFO: main.c(207): Reading and accumulating counts from /home/yaroslav/model/bwaccumdir/ua_buff_1
-INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [150x1x1 array]
-INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [50x3x4 array]
-INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [150x1x1 vector arrays]
+INFO: s3mixw_io.c(117): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/mixw_counts [153x1x1 array]
+INFO: s3tmat_io.c(118): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/tmat_counts [51x3x4 array]
+INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_counts with means with vars (2pass) [153x1x1 vector arrays]
 INFO: main.c(321): -2passvar yes
-INFO: main.c(391): Normalizing mean for n_mgau= 150, n_stream= 1, n_density= 1
+INFO: main.c(391): Normalizing mean for n_mgau= 153, n_stream= 1, n_density= 1
 INFO: main.c(414): Normalizing var
-INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/mixture_weights [150x1x1 array]
-INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/transition_matrices [50x3x4 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/means [150x1x1 array]
-INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/variances [150x1x1 array]
-Fri Apr  8 00:54:30 2016
-Current Overall Likelihood Per Frame = -141.383472262799
-Convergence ratio = -0.0138857778944441
-*WARNING*: NEGATIVE CONVERGENCE RATIO! CHECK YOUR DATA AND TRASNCRIPTS
+INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/mixture_weights [153x1x1 array]
+INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/transition_matrices [51x3x4 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/means [153x1x1 array]
+INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/variances [153x1x1 array]
+Tue Apr 12 15:14:48 2016
+Current Overall Likelihood Per Frame = -53.4231358700266
+Convergence ratio = 0.0673726603565896
 Likelihoods have converged! Baum Welch training completed!
 ******************************TRAINING COMPLETE*************************
-Fri Apr  8 00:54:30 2016
+Tue Apr 12 15:14:48 2016

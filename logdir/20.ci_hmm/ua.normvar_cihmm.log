@@ -26,4 +26,4 @@ INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_cou
 INFO: main.c(321): -2passvar yes
 INFO: main.c(414): Normalizing var
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/globalvar [1x1x1 array]
-Fri Apr  8 18:26:23 2016
+Tue Apr 12 15:10:27 2016

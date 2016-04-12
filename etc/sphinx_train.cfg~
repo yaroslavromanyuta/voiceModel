@@ -49,13 +49,13 @@ $CFG_DIAGFULL = 'no';
 # (yes/no) Perform vocal tract length normalization in training.  This
 # will result in a "normalized" model which requires VTLN to be done
 # during decoding as well.
-$CFG_VTLN = 'yes';
+$CFG_VTLN = 'no';
 # Starting warp factor for VTLN
 $CFG_VTLN_START = 0.80;
 # Ending warp factor for VTLN
-$CFG_VTLN_END = 1.40;
+$CFG_VTLN_END = 2.00;
 # Step size of warping factors
-$CFG_VTLN_STEP = 0.05;
+$CFG_VTLN_STEP = 0.10;
 
 # Directory to write queue manager logs to
 $CFG_QMGR_DIR = "$CFG_BASE_DIR/qmanager";
@@ -115,7 +115,7 @@ if (($CFG_HMM_TYPE ne ".semi.")
 # This configuration is fastest and best for most acoustic models in
 # PocketSphinx and Sphinx-III.  See below for Sphinx-II.
 $CFG_STATESPERHMM = 3;
-$CFG_SKIPSTATE = 'yes';
+$CFG_SKIPSTATE = 'no';
 
 if ($CFG_HMM_TYPE eq '.semi.') {
   $CFG_DIRLABEL = 'semi';
@@ -141,7 +141,7 @@ if ($CFG_HMM_TYPE eq '.semi.') {
   $CFG_FEATURE = "1s_c_d_dd";
   $CFG_NUM_STREAMS = 1;
   $CFG_INITIAL_NUM_DENSITIES = 1;
-  $CFG_FINAL_NUM_DENSITIES = 16;
+  $CFG_FINAL_NUM_DENSITIES = 8;
   die "The initial has to be less than the final number of densities" 
     if ($CFG_INITIAL_NUM_DENSITIES > $CFG_FINAL_NUM_DENSITIES);
 }
@@ -170,7 +170,7 @@ $CFG_NPART = 1;
 
 # (yes/no) Train a single decision tree for all phones (actually one
 # per state) (useful for grapheme-based models, use 'no' otherwise)
-$CFG_CROSS_PHONE_TREES = 'no';
+$CFG_CROSS_PHONE_TREES = 'yes';
 
 # Use force-aligned transcripts (if available) as input to training
 $CFG_FORCEDALIGN = 'yes';

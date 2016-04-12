@@ -21,4 +21,4 @@ INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_f
 INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/mixture_weights [153x1x1 array]
 main.c(83): Reading model definition file /home/yaroslav/model/model_architecture/ua.falign_ci.mdef
 main.c(90): 51 models defined
-Fri Apr  8 23:01:04 2016
+Tue Apr 12 15:08:31 2016

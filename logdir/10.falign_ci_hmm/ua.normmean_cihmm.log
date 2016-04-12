@@ -26,4 +26,4 @@ INFO: s3gau_io.c(386): Read /home/yaroslav/model/bwaccumdir/ua_buff_1/gauden_cou
 INFO: main.c(321): -2passvar yes
 INFO: main.c(391): Normalizing mean for n_mgau= 1, n_stream= 1, n_density= 1
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont_flatinitial/globalmean [1x1x1 array]
-Fri Apr  8 23:01:04 2016
+Tue Apr 12 15:08:32 2016

@@ -41,16 +41,16 @@ span.status {
 <h1 class="experiment">/home/yaroslav/model</h1>
 <h2 class="hostname">Training ua on ubuntu</h2>
 <hr>
-<h3>MODULE: 000 Computing feature from audio files	(2016-04-08 23:00)</h3>
+<h3>MODULE: 000 Computing feature from audio files	(2016-04-12 15:10)</h3>
 <p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
 <p class='result'>sphinx_fe <a href="file:///home/yaroslav/model/logdir/000.comp_feat/ua.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
 <p class='result'>sphinx_fe <a href="file:///home/yaroslav/model/logdir/000.comp_feat/ua.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
 <p>Feature extraction is done</p>
 <hr>
-<h3>MODULE: 00 verify training files	(2016-04-08 23:01)</h3>
+<h3>MODULE: 00 verify training files	(2016-04-12 15:10)</h3>
 <p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
-<p class='result'>Found 3013 words using 51 phones</p>
+<p class='result'>Found 4371 words using 51 phones</p>
 <span class='status passed'>passed</span>
 <p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
 <span class='status passed'>passed</span>
@@ -59,29 +59,39 @@ span.status {
 <p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
 <span class='status passed'>passed</span>
 <p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
-<p class='result'>Estimated Total Hours Training: 1.49174166666667</p>
+<p class='result'>Estimated Total Hours Training: 1.95211666666667</p>
 <p class='result'>This is a small amount of data, no comment at this time</p>
 <span class='status WARNING'>WARNING</span>
 <p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
-<p class='result'>Words in dictionary: 3010</p>
+<p class='result'>Words in dictionary: 4368</p>
 <p class='result'>Words in filler dictionary: 3</p>
 <span class='status passed'>passed</span>
 <p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
 <span class='status passed'>passed</span>
 <hr>
-<h3>MODULE: 0000 train grapheme-to-phoneme model	(2016-04-08 23:01)</h3>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2016-04-12 15:10)</h3>
 <p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
 <hr>
-<h3>MODULE: 01 Train LDA transformation	(2016-04-08 23:01)</h3>
+<h3>MODULE: 01 Train LDA transformation	(2016-04-12 15:10)</h3>
 <p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
 <hr>
-<h3>MODULE: 02 Train MLLT transformation	(2016-04-08 23:01)</h3>
+<h3>MODULE: 02 Train MLLT transformation	(2016-04-12 15:10)</h3>
 <p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
 <hr>
-<h3>MODULE: 05 Vector Quantization	(2016-04-08 23:01)</h3>
+<h3>MODULE: 05 Vector Quantization	(2016-04-12 15:10)</h3>
 <p>Skipped for continuous models</p>
 <hr>
-<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2016-04-08 23:01)</h3>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2016-04-12 15:10)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2016-04-12 15:10)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2016-04-12 15:10)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2016-04-12 15:10)</h3>
 <p class='phase'>Phase 1: Cleaning up directories:</p>
 <span class='progress'>	accumulator...</span>
 <span class='progress'>logs...</span>
@@ -90,104 +100,65 @@ span.status {
 </span>
 <span class='status completed'>completed</span>
 <p class='phase'>Phase 2: Flat initialize</p>
-<p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>mk_flat <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>init_gau <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>init_gau <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>cp_parm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>cp_parm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 3: Forward-Backward</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 98 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 1</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -57.7354710912591</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 2</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -56.9927634902778</p>
-<p class='result'>Convergence Ratio = 0.74270760098134</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 20 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 3</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -55.2808159468889</p>
-<p class='result'>Convergence Ratio = 1.71194754338891</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 34 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 4</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -54.0248035844297</p>
-<p class='result'>Convergence Ratio = 1.2560123624592</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 48 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 5</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -53.4595446551277</p>
-<p class='result'>Convergence Ratio = 0.565258929302026</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 56 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 6</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -53.2978655635109</p>
-<p class='result'>Convergence Ratio = 0.161679091616776</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 60 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 7</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/10.falign_ci_hmm/ua.1.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -53.2099816394483</p>
-<p class='result'>Training completed after 7 iterations</p>
-<hr>
-<h3>MODULE: 11 Force-aligning transcripts	(2016-04-08 23:05)</h3>
-<p class='phase'>Phase 1: Cleaning up directories:</p>
-<span class='progress'>logs...</span>
-<span class='progress'>output...</span>
-<span class='progress'>qmanager...</span>
-<span class='progress'>
-</span>
-<p class='phase'>Phase 3: Creating dictionary for alignment...</p>
-<p class='phase'>Phase 4: Creating transcript for alignment...</p>
-<p class='phase'>Phase 5: Running force alignment in  1 parts</p>
-<p class='result'>Force alignment starting: (1 of 1) </p>
-<p class='result'>sphinx3_align <a href="file:///home/yaroslav/model/logdir/11.force_align/ua.1.falign.log">Log File</a></p><p class='error'>ERROR: This step had 43 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<hr>
-<h3>MODULE: 12 Force-aligning data for VTLN	(2016-04-08 23:06)</h3>
-<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
-<hr>
-<h3>MODULE: 20 Training Context Independent models	(2016-04-08 23:06)</h3>
-<p class='phase'>Phase 1: Cleaning up directories:</p>
-<span class='progress'>	accumulator...</span>
-<span class='progress'>logs...</span>
-<span class='progress'>qmanager...</span>
-<span class='progress'>models...
-</span>
-<span class='status completed'>completed</span>
-<p class='phase'>Phase 2: Copy initialize from falign model</p>
-<p class='phase'>Phase 3: Forward-Backward</p>
-<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -52.9830457661752</p>
+<p class='result'>Current Overall Likelihood Per Frame = -57.4219302864541</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 18 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -52.9340528429307</p>
-<p class='result'>Training completed after 2 iterations</p>
+<p class='result'>Current Overall Likelihood Per Frame = -56.843567136278</p>
+<p class='result'>Convergence Ratio = 0.578363150176088</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 26 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -55.2543500902502</p>
+<p class='result'>Convergence Ratio = 1.58921704602776</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 54 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -54.0850594113473</p>
+<p class='result'>Convergence Ratio = 1.16929067890291</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -53.6345623682387</p>
+<p class='result'>Convergence Ratio = 0.450497043108591</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 82 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -53.4905085303832</p>
+<p class='result'>Convergence Ratio = 0.144053837855466</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 88 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/20.ci_hmm/ua.1.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -53.4231358700266</p>
+<p class='result'>Training completed after 7 iterations</p>
 <hr>
-<h3>MODULE: 30 Training Context Dependent models	(2016-04-08 23:06)</h3>
+<h3>MODULE: 30 Training Context Dependent models	(2016-04-12 15:14)</h3>
 <p class='phase'>Phase 1: Cleaning up directories:</p>
 <span class='progress'>	accumulator...</span>
 <span class='progress'>logs...</span>
@@ -199,357 +170,68 @@ span.status {
 <p class='result'>init_mixw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.copycitocd.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 3: Forward-Backward</p>
 <p class='result'>Baum welch starting for iteration: 1 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 90 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -52.9201281232002</p>
+<p class='result'>Current Overall Likelihood Per Frame = -53.3953739435402</p>
 <p class='result'>Baum welch starting for iteration: 2 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 80 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -48.1679723556839</p>
-<p class='result'>Convergence Ratio = 4.75215576751631</p>
+<p class='result'>Current Overall Likelihood Per Frame = -48.5355232254697</p>
+<p class='result'>Convergence Ratio = 4.85985071807047</p>
 <p class='result'>Baum welch starting for iteration: 3 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 84 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 3</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -45.3119255560026</p>
-<p class='result'>Convergence Ratio = 2.85604679968128</p>
+<p class='result'>Current Overall Likelihood Per Frame = -46.00114131779</p>
+<p class='result'>Convergence Ratio = 2.53438190767974</p>
 <p class='result'>Baum welch starting for iteration: 4 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 84 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 4</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -44.5135618091879</p>
-<p class='result'>Convergence Ratio = 0.798363746814651</p>
+<p class='result'>Current Overall Likelihood Per Frame = -45.4449798406923</p>
+<p class='result'>Convergence Ratio = 0.556161477097703</p>
 <p class='result'>Baum welch starting for iteration: 5 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 84 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 5</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -44.2681238313886</p>
-<p class='result'>Convergence Ratio = 0.245437977799291</p>
+<p class='result'>Current Overall Likelihood Per Frame = -45.3222360292869</p>
+<p class='result'>Convergence Ratio = 0.122743811405428</p>
 <p class='result'>Baum welch starting for iteration: 6 (1 of 1) </p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 84 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 6</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/30.cd_hmm_untied/ua.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -44.1909658942984</p>
+<p class='result'>Current Overall Likelihood Per Frame = -45.2821409095379</p>
 <p class='result'>Training completed after 6 iterations</p>
 <hr>
-<h3>MODULE: 40 Build Trees	(2016-04-08 23:07)</h3>
+<h3>MODULE: 40 Build Trees	(2016-04-12 15:16)</h3>
 <p class='phase'>Phase 1: Cleaning up old log files...</p>
 <p class='phase'>Phase 2: Make Questions</p>
 <p class='result'>make_quests <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.make_questions.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 3: Tree building</p>
-<p class='result'>Processing each phone with each state</p>
-<p class='result'>A 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.A.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>A 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.A.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>A 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.A.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>B 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.B.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>B 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.B.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>B 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.B.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>BB 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.BB.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>BB 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.BB.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>BB 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.BB.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>C 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.C.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>C 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.C.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>C 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.C.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CC 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CC.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CC 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CC.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CC 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CC.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CHH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CHH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CHH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CHH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>CHH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.CHH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>D 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.D.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>D 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.D.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>D 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.D.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>DD 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.DD.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>DD 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.DD.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>DD 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.DD.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>E 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.E.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>E 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.E.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>E 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.E.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>F 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.F.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>F 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.F.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>F 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.F.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>FF 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.FF.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>FF 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.FF.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>FF 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.FF.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>G 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.G.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>G 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.G.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>G 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.G.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>GG 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.GG.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>GG 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.GG.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>GG 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.GG.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>H 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.H.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>H 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.H.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>H 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.H.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>HH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.HH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>HH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.HH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>HH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.HH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>I 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.I.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>I 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.I.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>I 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.I.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>І 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.І.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>І 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.І.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>І 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.І.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>K 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.K.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>K 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.K.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>K 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.K.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>KK 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.KK.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>KK 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.KK.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>KK 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.KK.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>L 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.L.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>L 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.L.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>L 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.L.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>LL 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.LL.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>LL 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.LL.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>LL 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.LL.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>M 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.M.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>M 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.M.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>M 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.M.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>MM 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.MM.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>MM 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.MM.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>MM 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.MM.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>N 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.N.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>N 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.N.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>N 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.N.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>NN 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.NN.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>NN 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.NN.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>NN 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.NN.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>O 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.O.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>O 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.O.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>O 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.O.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>P 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.P.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>P 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.P.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>P 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.P.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>PP 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.PP.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>PP 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.PP.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>PP 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.PP.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>R 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.R.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>R 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.R.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>R 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.R.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>RR 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.RR.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>RR 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.RR.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>RR 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.RR.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>S 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.S.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>S 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.S.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>S 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.S.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SHH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SHH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SHH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SHH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SHH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SHH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Skipping SIL</p>
-<p class='result'>SS 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SS.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SS 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SS.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>SS 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.SS.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>T 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.T.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>T 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.T.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>T 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.T.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>TT 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.TT.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>TT 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.TT.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>TT 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.TT.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>U 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.U.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>U 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.U.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>U 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.U.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>V 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.V.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>V 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.V.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>V 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.V.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>VV 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.VV.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>VV 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.VV.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>VV 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.VV.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Y 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Y.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Y 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Y.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Y 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Y.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YA 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YA.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YA 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YA.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YA 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YA.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YE 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YE.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YE 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YE.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YE 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YE.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YI 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YI.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YI 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YI.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YI 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YI.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YU 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YU.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YU 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YU.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YU 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YU.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YY 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YY.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YY 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YY.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>YY 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.YY.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Z 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Z.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Z 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Z.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Z 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.Z.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZHH 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZHH.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZHH 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZHH.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZHH 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZHH.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZZ 0 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZZ.0.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZZ 1 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZZ.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>ZZ 2 </p>
-<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ZZ.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Processing all phones with each state</p>
+<p class='result'>ALLPHONES 0 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ALLPHONES 1 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ALLPHONES 2 </p>
+<p class='result'>bldtree <a href="file:///home/yaroslav/model/logdir/40.buildtrees/ua.buildtree.ALLPHONES.2.log">Log File</a></p><span class='status completed'>completed</span>
 <hr>
-<h3>MODULE: 45 Prune Trees	(2016-04-08 23:11)</h3>
+<h3>MODULE: 45 Prune Trees	(2016-04-12 15:25)</h3>
 <p class='result'>mk_mdef_gen <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.build.alltriphones.mdef.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 1: Tree Pruning</p>
 <p class='result'>prunetree <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.prunetree.1000.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 2: State Tying</p>
 <p class='result'>tiestate <a href="file:///home/yaroslav/model/logdir/45.prunetree/ua.tiestate.1000.log">Log File</a></p><span class='status completed'>completed</span>
 <hr>
-<h3>MODULE: 50 Training Context dependent models	(2016-04-08 23:11)</h3>
+<h3>MODULE: 50 Training Context dependent models	(2016-04-12 15:25)</h3>
 <p class='phase'>Phase 1: Cleaning up directories:</p>
 <span class='progress'>	accumulator...</span>
 <span class='progress'>logs...</span>
@@ -560,291 +242,197 @@ span.status {
 <p class='result'>init_mixw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.copy.ci.2.cd.log">Log File</a></p><span class='status completed'>completed</span>
 <p class='phase'>Phase 3: Forward-Backward</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 96 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -52.9201281232002</p>
+<p class='result'>Current Overall Likelihood Per Frame = -53.6541411386898</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 84 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.5822305827305</p>
-<p class='result'>Convergence Ratio = 1.3378975404697</p>
+<p class='result'>Current Overall Likelihood Per Frame = -52.0688882491386</p>
+<p class='result'>Convergence Ratio = 1.58525288955124</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 82 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 3</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.3621244688333</p>
-<p class='result'>Convergence Ratio = 0.220106113897238</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.816275018664</p>
+<p class='result'>Convergence Ratio = 0.252613230474587</p>
 <p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 80 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 4</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.2864684964886</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.7312205965218</p>
 <p class='result'>Split Gaussians, increase by 1</p>
 <p class='result'>inc_comp <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.split_gaussians.1.1.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.2864684964886</p>
-<p class='result'>Convergence Ratio = 0.0756559723446983</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.7312205965218</p>
+<p class='result'>Convergence Ratio = 0.0850544221422069</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 82 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.6687104410789</p>
+<p class='result'>Current Overall Likelihood Per Frame = -52.1030492037672</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 8 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 80 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -51.1061702157187</p>
-<p class='result'>Convergence Ratio = 0.562540225360245</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.5921738603746</p>
+<p class='result'>Convergence Ratio = 0.510875343392648</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 8 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 80 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 3</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.7682090058227</p>
-<p class='result'>Convergence Ratio = 0.337961209896022</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.2925037412599</p>
+<p class='result'>Convergence Ratio = 0.299670119114673</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 78 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 4</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.4561744108878</p>
-<p class='result'>Convergence Ratio = 0.312034594934893</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.998715734467</p>
+<p class='result'>Convergence Ratio = 0.293788006792873</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 5</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.2694612557822</p>
-<p class='result'>Convergence Ratio = 0.186713155105636</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.8351835836266</p>
+<p class='result'>Convergence Ratio = 0.163532150840354</p>
 <p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 6</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.169042265519</p>
-<p class='result'>Convergence Ratio = 0.100418990263215</p>
-<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 7 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 7</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.2.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.1086997434551</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.736706559389</p>
 <p class='result'>Split Gaussians, increase by 2</p>
 <p class='result'>inc_comp <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.split_gaussians.2.2.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.1086997434551</p>
-<p class='result'>Convergence Ratio = 0.0603425220638698</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.736706559389</p>
+<p class='result'>Convergence Ratio = 0.0984770242376172</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -50.4828986598255</p>
+<p class='result'>Current Overall Likelihood Per Frame = -51.0844553928841</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.9023940885724</p>
-<p class='result'>Convergence Ratio = 0.580504571253137</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.5237227379677</p>
+<p class='result'>Convergence Ratio = 0.560732654916379</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 3</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.6015333260695</p>
-<p class='result'>Convergence Ratio = 0.300860762502886</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.246177827347</p>
+<p class='result'>Convergence Ratio = 0.277544910620733</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 66 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 4</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.3141040244857</p>
-<p class='result'>Convergence Ratio = 0.287429301583828</p>
+<p class='result'>Current Overall Likelihood Per Frame = -50.0224353095677</p>
+<p class='result'>Convergence Ratio = 0.223742517779343</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 5</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.1242410135008</p>
-<p class='result'>Convergence Ratio = 0.189863010984901</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.8392463066828</p>
+<p class='result'>Convergence Ratio = 0.183189002884902</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 6</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.0068444981527</p>
-<p class='result'>Convergence Ratio = 0.117396515348119</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.7233183034569</p>
+<p class='result'>Convergence Ratio = 0.115928003225932</p>
 <p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 7</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.4.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -48.9263547847103</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.6468492246783</p>
 <p class='result'>Split Gaussians, increase by 4</p>
 <p class='result'>inc_comp <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.split_gaussians.4.4.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -48.9263547847103</p>
-<p class='result'>Convergence Ratio = 0.0804897134423825</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.6468492246783</p>
+<p class='result'>Convergence Ratio = 0.0764690787785725</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 1</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -49.2792971264994</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.9967887385901</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 2</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -48.6084174450509</p>
-<p class='result'>Convergence Ratio = 0.67087968144854</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.3752850177792</p>
+<p class='result'>Convergence Ratio = 0.621503720810857</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 64 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 3</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -48.2241350277841</p>
-<p class='result'>Convergence Ratio = 0.384282417266789</p>
+<p class='result'>Current Overall Likelihood Per Frame = -49.0418856996224</p>
+<p class='result'>Convergence Ratio = 0.333399318156779</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 62 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 4</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.914795407946</p>
-<p class='result'>Convergence Ratio = 0.309339619838141</p>
+<p class='result'>Current Overall Likelihood Per Frame = -48.7723633531598</p>
+<p class='result'>Convergence Ratio = 0.26952234646258</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 60 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 5</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.7255663302198</p>
-<p class='result'>Convergence Ratio = 0.189229077726203</p>
+<p class='result'>Current Overall Likelihood Per Frame = -48.598425035675</p>
+<p class='result'>Convergence Ratio = 0.173938317484776</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 60 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 6</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.6082094357003</p>
-<p class='result'>Convergence Ratio = 0.117356894519453</p>
+<p class='result'>Current Overall Likelihood Per Frame = -48.4780510913046</p>
+<p class='result'>Convergence Ratio = 0.12037394437035</p>
 <p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 7 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 60 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
 <span class='status completed'>completed</span>
 <p class='result'>Normalization for iteration: 7</p>
 <p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.8.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.5285121388314</p>
-<p class='result'>Split Gaussians, increase by 8</p>
-<p class='result'>inc_comp <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.split_gaussians.8.8.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.5285121388314</p>
-<p class='result'>Convergence Ratio = 0.0796972968689218</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 1 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 1</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.883673247026</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 2 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 2</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -47.0368770862843</p>
-<p class='result'>Convergence Ratio = 0.846796160741746</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 3 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 3</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -46.4785403686718</p>
-<p class='result'>Convergence Ratio = 0.558336717612491</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 4 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 4</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -46.1044206939588</p>
-<p class='result'>Convergence Ratio = 0.374119674712986</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 5 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 5</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -45.9109125667363</p>
-<p class='result'>Convergence Ratio = 0.193508127222465</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 6 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 6</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -45.7959329219371</p>
-<p class='result'>Convergence Ratio = 0.114979644799241</p>
-<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 7 (1 of 1)</p>
-<p class='result'>bw <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status completed'>completed</span>
-<p class='result'>Normalization for iteration: 7</p>
-<p class='result'>norm <a href="file:///home/yaroslav/model/logdir/50.cd_hmm_tied/ua.16.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
-<p class='result'>Current Overall Likelihood Per Frame = -45.7157205542954</p>
-<p>Training for 16 Gaussian(s) completed after 7 iterations</p>
+<p class='result'>Current Overall Likelihood Per Frame = -48.3963055886963</p>
+<p>Training for 8 Gaussian(s) completed after 7 iterations</p>
 <hr>
-<h3>MODULE: 60 Lattice Generation	(2016-04-08 23:27)</h3>
+<h3>MODULE: 60 Lattice Generation	(2016-04-12 15:36)</h3>
 <p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
 <hr>
-<h3>MODULE: 61 Lattice Pruning	(2016-04-08 23:27)</h3>
+<h3>MODULE: 61 Lattice Pruning	(2016-04-12 15:36)</h3>
 <p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
 <hr>
-<h3>MODULE: 62 Lattice Format Conversion	(2016-04-08 23:27)</h3>
+<h3>MODULE: 62 Lattice Format Conversion	(2016-04-12 15:36)</h3>
 <p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
 <hr>
-<h3>MODULE: 65 MMIE Training	(2016-04-08 23:27)</h3>
+<h3>MODULE: 65 MMIE Training	(2016-04-12 15:36)</h3>
 <p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
 <hr>
-<h3>MODULE: 90 deleted interpolation	(2016-04-08 23:27)</h3>
+<h3>MODULE: 90 deleted interpolation	(2016-04-12 15:36)</h3>
 <p>Skipped for continuous models</p>
 <hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-08 23:27)</h3>
-<p class='result'>Decoding 2 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><p class='error'>ERROR: FATAL: "batch.c", line 822: PocketSphinx decoder init failed</p>
-<p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status FAILED'>FAILED</span>
-<p class='error'>ERROR: Failed to start pocketsphinx_batch</p>
-<p>        Aligning results to find error rate</p>
-<hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 04:37)</h3>
-<p class='result'>Decoding 2 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><p class='error'>ERROR: FATAL: "batch.c", line 822: PocketSphinx decoder init failed</p>
-<p class='error'>ERROR: This step had 3 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
-<span class='status FAILED'>FAILED</span>
-<p class='error'>ERROR: Failed to start pocketsphinx_batch</p>
-<p>        Aligning results to find error rate</p>
-<hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 04:46)</h3>
-<p class='result'>Decoding 2 segments starting at 0 (part 1 of 1) </p>
+<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-12 15:36)</h3>
+<p class='result'>Decoding 568 segments starting at 0 (part 1 of 1) </p>
 <p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><span class='status completed'>completed</span>
 <p>        Aligning results to find error rate</p>
-<p class='result'>SENTENCE ERROR: 0.0% (0/2)   WORD ERROR RATE: 0.0% (0/27)</p>
-<p class='result'><hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 04:48)</h3>
-<p class='result'>Decoding 498 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 04:53)</h3>
-<p class='result'>Decoding 150 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><span class='status completed'>completed</span>
-<p>        Aligning results to find error rate</p>
-<p class='result'>SENTENCE ERROR: 28.0% (42/150)   WORD ERROR RATE: 24.2% (536/2218)</p>
-<p class='result'><hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 05:08)</h3>
-<p class='result'>Decoding 29 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><span class='status completed'>completed</span>
-<p>        Aligning results to find error rate</p>
-<p class='result'>SENTENCE ERROR: 79.3% (23/29)   WORD ERROR RATE: 2.2% (44/2036)</p>
-<p class='result'><hr>
-<h3>MODULE: DECODE Decoding using models previously trained	(2016-04-09 05:17)</h3>
-<p class='result'>Decoding 498 segments starting at 0 (part 1 of 1) </p>
-<p class='result'>pocketsphinx_batch <a href="file:///home/yaroslav/model/logdir/decode/ua-1-1.log">Log File</a></p><span class='status completed'>completed</span>
-<p>        Aligning results to find error rate</p>
-<p class='result'>SENTENCE ERROR: 37.8% (188/498)   WORD ERROR RATE: 15.1% (1865/12324)</p>
+<p class='result'>SENTENCE ERROR: 42.3% (240/568)   WORD ERROR RATE: 31.4% (4912/15630)</p>
 <p class='result'>

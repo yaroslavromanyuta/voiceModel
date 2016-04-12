@@ -29,9 +29,6 @@ INFO: s3mixw_io.c(233): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/m
 INFO: s3tmat_io.c(176): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/transition_matrices [51x3x4 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/means [153x1x1 array]
 INFO: s3gau_io.c(228): Wrote /home/yaroslav/model/model_parameters/ua.ci_cont/variances [153x1x1 array]
-Fri Apr  8 18:29:17 2016
-Current Overall Likelihood Per Frame = -141.73058915024
-Convergence ratio = 0.0596288464183203
-Likelihoods have converged! Baum Welch training completed!
-******************************TRAINING COMPLETE*************************
-Fri Apr  8 18:29:17 2016
+Tue Apr 12 15:14:37 2016
+Current Overall Likelihood Per Frame = -53.4905085303832
+Convergence ratio = 0.144053837855466

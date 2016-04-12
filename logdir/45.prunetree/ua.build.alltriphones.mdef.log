@@ -24,14 +24,14 @@ INFO: mk_mdef_gen.c(190): 0 word beginning triphones in input phone list
 INFO: mk_mdef_gen.c(191): 0 word internal triphones in input phone list
 INFO: mk_mdef_gen.c(192): 0 word ending triphones in input phone list
 INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.dic
-INFO: mk_mdef_gen.c(322): 3010 words in dict /home/yaroslav/model/etc/ua.dic
+INFO: mk_mdef_gen.c(322): 4368 words in dict /home/yaroslav/model/etc/ua.dic
 INFO: mk_mdef_gen.c(280): Reading dict /home/yaroslav/model/etc/ua.filler
 INFO: mk_mdef_gen.c(322): 3 words in dict /home/yaroslav/model/etc/ua.filler
-INFO: mk_mdef_gen.c(442): 3013 words in dictionary
-INFO: mk_mdef_gen.c(443): 16920 unique single word triphones in dictionary
-INFO: mk_mdef_gen.c(444): 11628 unique word beginning triphones in dictionary
-INFO: mk_mdef_gen.c(445): 3771 unique word internal triphones in dictionary
-INFO: mk_mdef_gen.c(446): 13865 unique word ending triphones in dictionary
-INFO: mk_mdef_gen.c(897): 51 n_base, 46184 n_tri
+INFO: mk_mdef_gen.c(442): 4371 words in dictionary
+INFO: mk_mdef_gen.c(443): 17280 unique single word triphones in dictionary
+INFO: mk_mdef_gen.c(444): 12852 unique word beginning triphones in dictionary
+INFO: mk_mdef_gen.c(445): 4405 unique word internal triphones in dictionary
+INFO: mk_mdef_gen.c(446): 15792 unique word ending triphones in dictionary
+INFO: mk_mdef_gen.c(897): 51 n_base, 50329 n_tri
 INFO: mk_mdef_gen.c(969): Wrote mdef file /home/yaroslav/model/model_architecture/ua.alltriphones.mdef
-Fri Apr  8 23:11:39 2016
+Tue Apr 12 15:25:53 2016

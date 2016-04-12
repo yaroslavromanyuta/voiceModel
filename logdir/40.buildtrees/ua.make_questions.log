@@ -29,10 +29,10 @@ INFO: s3mixw_io.c(117): Read /home/yaroslav/model/model_parameters/ua.ci_cont/mi
 INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/means [153x1x1 array]
 INFO: s3gau_io.c(169): Read /home/yaroslav/model/model_parameters/ua.ci_cont/variances [153x1x1 array]
 INFO: main.c(1109): Done building questions using state 0
-INFO: main.c(1110):  21 questions from state 0
+INFO: main.c(1110):  20 questions from state 0
 INFO: main.c(1109): Done building questions using state 1
-INFO: main.c(1110):  20 questions from state 1
+INFO: main.c(1110):  21 questions from state 1
 INFO: main.c(1109): Done building questions using state 2
-INFO: main.c(1110):  20 questions from state 2
+INFO: main.c(1110):  21 questions from state 2
 INFO: main.c(1115): Stored questions in /home/yaroslav/model/model_architecture/ua.tree_questions
-Fri Apr  8 23:07:53 2016
+Tue Apr 12 15:16:11 2016

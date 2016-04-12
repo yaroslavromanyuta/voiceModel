@@ -25,4 +25,4 @@ INFO: mk_mdef_gen.c(191): 0 word internal triphones in input phone list
 INFO: mk_mdef_gen.c(192): 0 word ending triphones in input phone list
 INFO: mk_mdef_gen.c(897): 51 n_base, 0 n_tri
 INFO: mk_mdef_gen.c(969): Wrote mdef file /home/yaroslav/model/model_architecture/ua.falign_ci.mdef
-Fri Apr  8 23:01:04 2016
+Tue Apr 12 15:08:31 2016
