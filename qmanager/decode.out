@@ -1,3 +1,0 @@
-        Decoding 0 segments starting at 0 (part 1 of 1) 
-ERROR: FATAL: "batch.c", line 815: Failed to open control file '/home/yaroslav/model/etc/ua_test.fileids': No such file or directory
-ERROR: Failed to start pocketsphinx_batch
